@@ -1,0 +1,63 @@
+Delivered-To: john.podesta@gmail.com
+Received: by 10.25.88.78 with SMTP id m75csp1292832lfb;
+        Sun, 6 Mar 2016 20:23:16 -0800 (PST)
+X-Received: by 10.60.73.99 with SMTP id k3mr12851477oev.10.1457324596114;
+        Sun, 06 Mar 2016 20:23:16 -0800 (PST)
+Return-Path: <ckeigher@hillaryclinton.com>
+Received: from mail-ob0-x233.google.com (mail-ob0-x233.google.com. [2607:f8b0:4003:c01::233])
+        by mx.google.com with ESMTPS id h82si10167201oif.44.2016.03.06.20.23.15
+        for <john.podesta@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 06 Mar 2016 20:23:16 -0800 (PST)
+Received-SPF: pass (google.com: domain of ckeigher@hillaryclinton.com designates 2607:f8b0:4003:c01::233 as permitted sender) client-ip=2607:f8b0:4003:c01::233;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of ckeigher@hillaryclinton.com designates 2607:f8b0:4003:c01::233 as permitted sender) smtp.mailfrom=ckeigher@hillaryclinton.com;
+       dkim=pass header.i=@hillaryclinton.com;
+       dmarc=pass (p=QUARANTINE dis=NONE) header.from=hillaryclinton.com
+Received: by mail-ob0-x233.google.com with SMTP id xx9so94947089obc.2
+        for <john.podesta@gmail.com>; Sun, 06 Mar 2016 20:23:15 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=hillaryclinton.com; s=google;
+        h=from:mime-version:date:message-id:subject:to:cc;
+        bh=loBnuPQWv8L/0MGDP7SNzzdB4uhqPEcY8Q9Zia+3Wzk=;
+        b=QIg2XVZlfUx03PPPAH1yKXxoh0q4VJRjOdmViSCBQJM9yIC8s3cOXMl+wcitxvjYHO
+         BQXJ6syf1xVaIbRYwK14sAtIfvOToBnorK3MJR8oDXSclmFVqRAL2WiVH3sY9AJs6E6j
+         8W6r1KGwAB51diBvsbrpW1V2GqkZiHNytFgm4=
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:from:mime-version:date:message-id:subject:to:cc;
+        bh=loBnuPQWv8L/0MGDP7SNzzdB4uhqPEcY8Q9Zia+3Wzk=;
+        b=DqSO10jhcMtl3MSGkXj5lOCLMKDtxuzkMi8hGIq/kuAxbuj0MNKNHG6n+Ez3NJVe6W
+         zD1rXWLupmQno3Gb1fB1pk76mSW2NGBVO5nOzoBT0BxARZ6NeGNT0yh/BVnjZARlY5hw
+         gnciNQzSEK3Fz/K2yQeIrveFa7HeFTop3INz9CZTHTMXipvr8Q2G50xQD9GluIm4rdYo
+         PCa4vhVtIbw657CecLYwef2JpAOb9fAdaaz1ZqWZ5zNmRuHKDn7+UJOzWZMT/hbKFmst
+         0L3lwEeHjKsCKvsh/bsmQkZArWbsJOQ5d/65LjX+KX4Z2W4jlRCV/6zDpJ67p/v1plrI
+         gb8Q==
+X-Gm-Message-State: AD7BkJKGYQ6axg0WrFNHyW93DWYPMHQuOOmHouX4Apsvz+JTtpBisOWnQIA3N2sIVUfE1r1WgDWQGMNSgDSOAQwC
+X-Received: by 10.182.230.6 with SMTP id su6mr927164obc.16.1457324595725; Sun,
+ 06 Mar 2016 20:23:15 -0800 (PST)
+From: Connolly Keigher <ckeigher@hillaryclinton.com>
+Mime-Version: 1.0 (1.0)
+Date: Sun, 6 Mar 2016 23:23:15 -0500
+Message-ID: <7693401704859862871@unknownmsgid>
+Subject: IMPT! Hotel bar closes at midnight
+To: Opal Vadhan <ovadhan@hfaadvance.com>
+CC: Huma Abedin <ha16@hillaryclinton.com>, 
+ Jake Sullivan <jsullivan@hillaryclinton.com>, 
+ Karen Dunn <karen.l.dunn@gmail.com>, Ron Klain <ron.klain@revolution.com>, 
+ Tony Carrk <tcarrk@hillaryclinton.com>, "Barnett, Robert" <RBarnett@wc.com>, 
+ Mandy Grunwald <gruncom@aol.com>, "Margolis, Jim" <Jim.Margolis@gmmb.com>, 
+ Joel Benenson <jbenenson@bsgco.com>, 
+ Sara Aronchick Solow <sara.solow@gmail.com>, 
+ Kristina Costa <kcosta@hillaryclinton.com>, 
+ John Podesta <jp66@hillaryclinton.com>, 
+ John Podesta <john.podesta@gmail.com>, 
+ Jennifer Palmieri <jpalmieri@hillaryclinton.com>, 
+ Tom Kerr <kerrthom@gmail.com>
+Content-Type: text/plain; charset=UTF-8
+
+Team - we are about 15mins away from the hotel and I know we all want
+to be sure we get some sustenance when we return. SO, I encourage you
+to come thru the loading dock entrance to the hotel along with HRC.
+And then we can race you to the Motor Bar on the 2nd floor which is
+open until midnight.

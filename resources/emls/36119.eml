@@ -1,0 +1,527 @@
+Delivered-To: john.podesta@gmail.com
+Received: by 10.25.125.86 with SMTP id y83csp159621lfc;
+        Wed, 28 Oct 2015 13:39:15 -0700 (PDT)
+X-Received: by 10.55.71.19 with SMTP id u19mr22082383qka.82.1446064755783;
+        Wed, 28 Oct 2015 13:39:15 -0700 (PDT)
+Return-Path: <BxBFXA0BFUcDRFQ8B1wCAlsNVQMGBQcBAA8FUT9-WgwLS2ZaBwEVQARzV1hQDF9PAFZdOwwAUQ@bounce.bluestatedigital.com>
+Received: from mta-dock-front-24.bluestatedigital.com (mta-dock-front-24.bluestatedigital.com. [66.151.230.135])
+        by mx.google.com with ESMTPS id e131si43747399qhc.58.2015.10.28.13.39.15
+        for <John.Podesta@gmail.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 28 Oct 2015 13:39:15 -0700 (PDT)
+Received-SPF: pass (google.com: domain of BxBFXA0BFUcDRFQ8B1wCAlsNVQMGBQcBAA8FUT9-WgwLS2ZaBwEVQARzV1hQDF9PAFZdOwwAUQ@bounce.bluestatedigital.com designates 66.151.230.135 as permitted sender) client-ip=66.151.230.135;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of BxBFXA0BFUcDRFQ8B1wCAlsNVQMGBQcBAA8FUT9-WgwLS2ZaBwEVQARzV1hQDF9PAFZdOwwAUQ@bounce.bluestatedigital.com designates 66.151.230.135 as permitted sender) smtp.mailfrom=BxBFXA0BFUcDRFQ8B1wCAlsNVQMGBQcBAA8FUT9-WgwLS2ZaBwEVQARzV1hQDF9PAFZdOwwAUQ@bounce.bluestatedigital.com;
+       dkim=pass header.i=@bounce.bluestatedigital.com
+Received: from bounce.bluestatedigital.com (unknown [10.0.200.178])
+	by mta-dock-front-24.bluestatedigital.com (Postfix) with ESMTP id 3nmMFb222CzjWxC
+	for <John.Podesta@gmail.com>; Wed, 28 Oct 2015 20:39:15 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+	d=bounce.bluestatedigital.com; s=bsdkey; t=1446064755;
+	bh=t8axfUswnaU0NZqLKgP78uUROF3mOZOFZ8CodmMfumg=;
+	h=Date:To:From:Reply-to:Subject:List-Unsubscribe;
+	b=I0/t+i1KXXCNQzGJtuO2nPMWd2LIyu3bgmjYwX8e4mCZbfBsAZoWHN+bhwb3KhmVq
+	 NuP/O+bGfnE+HWMkesBb4b476xxv2aE9sVznUd5Hj38b91ozI0DphcluTTGDiineT2
+	 A7QQtLzN6ksjhN9nOS3ZcWk2HsUFRCyxtHUGjCXA=
+Received: from phpmailer 
+	by bounce.bluestatedigital.com with local (PHPMailer);
+	Wed, 28 Oct 2015 20:39:15 +0000
+Date: Wed, 28 Oct 2015 20:39:15 +0000
+To: John Podesta <John.Podesta@gmail.com>
+From: "Shumway Marshall, Business Forward" <info@businessfwd.org>
+Reply-to: info@businessfwd.org
+Subject: REMINDER: Webinar on GDP with U.S. Department of the Treasury
+Message-ID: <407d238db822814237c91117340721e3@bounce.bluestatedigital.com>
+X-Priority: 3
+X-Mailer: PHPMailer [version 1.71-blue_mailer]
+X-maillist-id: 691c84e122b2b672
+X-rpcampaign: rp_1090648
+X-maillist-guid: BxBFXA0BFUcDRFQ8B1wCAlsNVQMGBQcBAA8FUT9-WgwLS2ZaBwEVQARzV1hQDF9PAFZdOwwAUQ
+List-Unsubscribe: <http://action.businessfwd.org/unsubscribe?email=John.Podesta%40gmail.com>, <mailto:BxBFXA0BFUcDRFQ8B1wCAlsNVQMGBQcBAA8FUT9-WgwLS2ZaBwEVQARzV1hQDF9PAFZdOwwAUQ@bounce.bluestatedigital.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_407d238db822814237c91117340721e3"
+
+--b1_407d238db822814237c91117340721e3
+Content-Type: text/plain; charset = "utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+John--=20
+
+Don't forget to sign up for our webinar on Thursday on the latest GDP =
+estimates with the U.S. Department of the Treasury.
+
+As talk grows about whether the Federal Reserve will increase interest =
+rates before the end of the year, business leaders and economists will =
+closely analyze the next estimate of Gross Domestic Product, which the =
+U.S. Commerce Department will release earlier that day.
+
+Here's the link to register: http://www.businessfwd.org/blog/gdp-webinar.
+
+I hope you can make it,
+
+Shumway
+
+P.S. Can't make it? Sign up to receive a recording > =
+http://action.businessfwd.org/page/s/rsvp-no-for-gdp-webinar
+
+________________________
+
+From: Shumway Marshall, Business Forward
+Date: Thursday, October 15, 2015 at 4:05 PM
+Subject: INVITE: Webinar on GDP with the U.S. Department of the Treasury
+
+John--=20
+
+As talk grows about whether the Federal Reserve will increase interest =
+rates before the end of the year, business leaders and economists will =
+closely analyze the next estimate of Gross Domestic Product, which the =
+U.S. Commerce Department will release on Thursday, October 29.
+
+That day, please join Business Forward for a conference call to learn =
+about the latest GDP estimate and what it means for your business with two =
+economists--one from the federal government and one from the private =
+sector.
+
+:: Can you join our webinar on GDP? ::
+
+YES > http://www.businessfwd.org/blog/gdp-webinar
+NO > http://action.businessfwd.org/page/s/rsvp-no-for-gdp-webinar
+    =20
+
+Here are the details:
+
+WHAT
+Webinar for business leaders on GDP
+
+WITH
+Karen Dynan
+Assistant Secretary of the Treasury for Economic Policy and Chief =
+Economist
+U.S. Department of Treasury
+
+and
+
+Bill Hampel
+Chief Economist and Chief Policy Officer
+Credit Union National Association (CUNA)
+
+WHEN
+Tuesday, October 29=20
+1:00 p.m. ET - 10:00 a.m. PT
+
+WHERE
+You will receive a webinar link when you register.
+
+There will be time on the call for you to ask questions, or you can submit =
+them in advance by emailing info@businessfwd.org.
+
+Please note that to foster a candid discussion, this call is off the =
+record and not for press purposes.
+
+Here's the link to register: http://www.businessfwd.org/blog/gdp-webinar
+
+Can't make it? Sign up to receive a recording> =
+http://action.businessfwd.org/page/s/rsvp-no-for-gdp-webinar
+
+I hope you can make it,=20
+
+Shumway Marshall
+Digital Director
+Business Forward
+
+P.S. There is no cost to attend Business Forward's programming so please =
+feel free to forward this invitation to your colleagues. ----
+
+This email was sent to John.Podesta@gmail.com.
+
+To unsubscribe, go to:=20
+  http://action.businessfwd.org/unsubscribe
+
+
+--b1_407d238db822814237c91117340721e3
+Content-Type: text/html; charset = "utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" =
+"http://www.w3.org/TR/REC-html40/loose.dtd">
+<?xml encoding=3D"UTF-8"??>
+<html><body><table align=3D"center" bgcolor=3D"white" cellpadding=3D"0" =
+cellspacing=3D"0" style=3D"padding-top:10px;" =
+width=3D"100%"><tbody><tr><td style=3D"padding-top: 20px; padding-bottom: =
+20px;">
+				<p style=3D"color: rgb(0, 0, 0); font-family: Calibri;">
+					<span style=3D"font-family: arial, helvetica, sans-serif; font-size: =
+14px; line-height: 19px;">John&mdash;&nbsp;</span></p>
+				<p style=3D"color: rgb(0, 0, 0); font-family: Calibri;">
+					<strong><span style=3D"font-family: arial, helvetica, sans-serif; =
+font-size: 14px; line-height: 19px;"><a href=3D"http://action.businessfwd.=
+org/page/m/3b1a3b80/46351693/a06986e/4ab7356/2180740025/VEsH/" =
+title=3D"http://www.businessfwd.org/blog/gdp-webinar"><span =
+style=3D"color:#1b75bb;"><u>Don't forget to sign up for our webinar on =
+Thursday on the latest GDP estimates.</u></span></a></span></strong></p>
+				<p style=3D"color: rgb(0, 0, 0); font-family: Calibri;">
+					<span style=3D"font-family: arial, helvetica, sans-serif; font-size: =
+14px;">As talk grows about whether the Federal Reserve will increase =
+interest rates before the end of the year, business leaders and economists =
+will closely analyze the next estimate of Gross Domestic Product, which =
+the U.S.&nbsp;</span><span style=3D"font-family: arial, helvetica, =
+sans-serif; font-size: 14px;">Department of&nbsp;</span><span =
+style=3D"font-family: arial, helvetica, sans-serif; font-size: =
+14px;">Commerce will release earlier that day.</span></p>
+				<p>
+					<span style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, =
+sans-serif; font-size: 14px; line-height: 19.6000003814697px;">Here's the =
+link to register: </span><a href=3D"http://action.businessfwd.org/page/m/3=
+b1a3b80/46351693/a06986e/4ab7356/2180740025/VEsE/" =
+title=3D"http://www.businessfwd.org/blog/gdp-webinar"><span =
+style=3D"color:#1b75bb;"><u><span style=3D"font-family: arial, helvetica, =
+sans-serif; font-size: 14px; line-height: 19px;">http://www.businessfwd.or=
+g/blog/gdp-webinar</span></u></span></a>.</p>
+				<p>
+					<span style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, =
+sans-serif; font-size: 14px; line-height: 19.6000003814697px;">I hope you =
+can make it,</span></p>
+				<p>
+					<span style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, =
+sans-serif; font-size: 14px; line-height: =
+19.6000003814697px;">--Shumway</span></p>
+				<p>
+					<span style=3D"font-family: arial, helvetica, sans-serif; font-size: =
+14px;">P.S. Can't make it?&nbsp;</span><a href=3D"http://action.businessfw=
+d.org/page/m/3b1a3b80/46351693/a06986e/4ab7357/2180740025/VEsF/" =
+style=3D"font-family: arial, helvetica, sans-serif; font-size: 14px;" =
+title=3D"http://action.businessfwd.org/page/s/rsvp-no-for-gdp-webinar"><sp=
+an style=3D"color: rgb(27, 117, 187);"><u><strong>Sign up to receive a =
+recording.</strong></u></span></a></p>
+				<p>
+					<span style=3D"color:#a9a9a9;"><span style=3D"font-family: arial; =
+font-size: 14px; line-height: =
+19.600000381469727px;">_____________________</span></span></p>
+				<table align=3D"center" bgcolor=3D"white" cellpadding=3D"0" =
+cellspacing=3D"0" style=3D"font-family: arial, helvetica; padding-top: =
+10px;" width=3D"100%"><tbody><tr><td style=3D"font-family: arial, =
+helvetica, sans-serif; padding-top: 10px; padding-bottom: 10px;">
+								<p style=3D"color: rgb(88, 88, 88);">
+									<strong style=3D"font-size: 14px; color: rgb(0, 0, =
+0);">From:&nbsp;</strong><span style=3D"font-size: 14px; color: rgb(0, 0, =
+0);">Shumway Marshall, Business Forward</span><br><span style=3D"color: =
+rgb(0, 0, 0);"><span style=3D"font-size: =
+14px;"><b>Date:&nbsp;</b></span></span><span style=3D"color: rgb(0, 0, 0); =
+font-size: 14px;">Thursday, October 15, 2015 at 4:05 PM</span><br><span =
+style=3D"color: rgb(0, 0, 0); font-size: =
+14px;"><strong>Subject:</strong>&nbsp;</span><span style=3D"color: rgb(0, =
+0, 0); font-size: 14px;">INVITE: Webinar on GDP with the U.S. Department =
+of the Treasury</span></p>
+								<span style=3D"font-size: 14px;"><span style=3D"color: rgb(88, 88, =
+88);"><invite: business=3D"" disaster=3D"" for=3D"" preparedness=3D"" =
+span=3D"" with=3D"" your=3D""><table align=3D"center" bgcolor=3D"white" =
+cellpadding=3D"0" cellspacing=3D"0" style=3D"padding-top: 10px;" =
+width=3D"100%"><tbody><tr><td align=3D"center">
+												<center style=3D"color: rgb(0, 0, 0); font-family: Times;">
+													<p>
+														<br><a href=3D"http://action.businessfwd.org/page/m/3b1a3b80=
+/46351693/a06986e/4ab7350/2180740025/VEsC/" =
+title=3D"http://action.businessfwd.org/page/m////4aa9eba//VEsH/"><img =
+alt=3D"" src=3D"http://action.businessfwd.org/page/-/Email%20Assets/Busine=
+ssFWD-400.jpg"></a></p>
+												</center>
+												<table align=3D"center" bgcolor=3D"white" cellpadding=3D"0" =
+cellspacing=3D"0" style=3D"padding-top:10px;" =
+width=3D"100%"><tbody><tr><td align=3D"center">
+																&nbsp;</td>
+														</tr><tr><td style=3D"padding-top: 20px; padding-bottom: =
+20px;">
+																<p>
+																	<span style=3D"color:#000000;"><span =
+style=3D"font-family: arial, helvetica, sans-serif; font-size: 14px; =
+line-height: 19.600000381469727px;">John&mdash;</span></span></p>
+																<center>
+																	<div style=3D"text-align: left;">
+																		<p>
+																			<span style=3D"color:#000000;"><span =
+style=3D"line-height: 19.600000381469727px;">As talk grows about whether =
+the Federal Reserve will increase interest rates before the end of the =
+year, business leaders and economists will closely analyze the next =
+estimate of Gross Domestic Product, which the U.S. Commerce Department =
+will release on Thursday, October 29.</span></span></p>
+																		<p>
+																			<a href=3D"http://action.businessfwd.org/page/m/3b1a3b8=
+0/46351693/a06986e/4ab7356/2180740025/VEsD/" =
+title=3D"http://www.businessfwd.org/blog/gdp-webinar"><span =
+style=3D"color: rgb(27, 117, 187);"><span style=3D"line-height: =
+19.600000381469727px;"><strong><u>That day, please join Business Forward =
+for a conference call to learn about the latest GDP estimate and what it =
+means for your business with two economists&mdash;one from the federal =
+government and one from the private =
+sector.</u></strong></span></span></a></p>
+																		<p align=3D"center" style=3D"color: rgb(0, 0, 0); =
+font-family: -webkit-standard;">
+																			<span style=3D"font-family: arial, helvetica, =
+sans-serif; line-height: 19.600000381469727px;"><strong =
+style=3D"line-height: 19.6000003814697px; font-size: 18px;">Can you join =
+our webinar on GDP?</strong></span></p>
+																		<center style=3D"color: rgb(0, 0, 0); font-family: =
+-webkit-standard;">
+																			<div dir=3D"ltr" style=3D"color: rgb(105, 105, 105); =
+font-family: arial, helvetica, sans-serif; line-height: =
+19.6000003814697px;">
+																				<div style=3D"line-height: 19.6000003814697px;">
+																					<p align=3D"center">
+																						<span style=3D"color: rgb(0, 0, 0);"><span =
+style=3D"line-height: 19.600000381469727px;"><a href=3D"http://action.busi=
+nessfwd.org/page/m/3b1a3b80/46351693/a06986e/4ab7351/2180740025/VEsA/" =
+title=3D"http://action.businessfwd.org/page/m////4ab89d2//VEsF/"><span =
+style=3D"color: rgb(102, 102, 102);"><img alt=3D"" height=3D"55" =
+src=3D"http://action.businessfwd.org/page/-/images/Yes-.png" =
+width=3D"125"></span></a><span style=3D"color: rgb(102, 102, 102);">&nbsp; =
+&nbsp; &nbsp;</span><a href=3D"http://action.businessfwd.org/page/m/3b1a3b=
+80/46351693/a06986e/4ab7352/2180740025/VEsB/" =
+title=3D"http://action.businessfwd.org/page/m////4ab89d3//VEsC/"><span =
+style=3D"color: rgb(102, 102, 102);"><img alt=3D"" height=3D"55" =
+src=3D"http://action.businessfwd.org/page/-/images/No.png" =
+style=3D"border-width: 0px; border-style: solid;" =
+width=3D"125"></span></a></span></span></p>
+																				</div>
+																			</div>
+																		</center>
+																		<center style=3D"color: rgb(0, 0, 0); font-family: =
+-webkit-standard;">
+																			<div style=3D"text-align: left;">
+																				<p align=3D"center" style=3D"color: rgb(105, 105, =
+105); font-family: arial, helvetica, sans-serif; line-height: =
+19.6000003814697px;">
+																					<span style=3D"color: rgb(0, 0, 0);"><span =
+style=3D"line-height: 19.600000381469727px;"><span style=3D"font-size: =
+18px;"><span style=3D"color: rgb(27, 117, 187);"><strong><span =
+style=3D"line-height: 19.6000003814697px;"><span style=3D"font-family: =
+Arial, Helvetica, sans-serif; line-height: 1.4;">Here are the =
+details:</span></span></strong></span></span></span></span></p>
+																				<p align=3D"center" style=3D"color: rgb(105, 105, =
+105); font-family: arial, helvetica, sans-serif; line-height: =
+19.6000003814697px;">
+																					<span style=3D"color: rgb(0, 0, 0);"><span =
+style=3D"line-height: 19.6000003814697px;"><span style=3D"font-family: =
+Arial, Helvetica, sans-serif; line-height: =
+1.4;"><strong>WHAT</strong></span></span></span><br><span style=3D"color: =
+rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif;">Webinar for =
+business leaders on GDP</span></p>
+																				<p align=3D"center" style=3D"line-height: 19.6px;">
+																					<span style=3D"font-family: arial, helvetica, =
+sans-serif;"><span style=3D"line-height: 19.600000381469727px;"><span =
+style=3D"font-family: Arial, Helvetica, sans-serif; line-height: 1.4; =
+text-align: left;"><strong>WITH</strong></span></span></span></p>
+																				<p align=3D"center" style=3D"line-height: 19.6px;">
+																					<strong style=3D"font-family: Arial, Helvetica, =
+sans-serif; font-size: 18px; line-height: 19.6px;">Karen =
+Dynan</strong><br><span style=3D"font-family: arial, helvetica, =
+sans-serif; text-align: left;">Assistant Secretary of the Treasury for =
+Economic Policy and Chief Economist</span><br><em style=3D"text-align: =
+left;"><font color=3D"#000000" face=3D"Arial, Helvetica, sans-serif">U.S. =
+Department of Treasury</font></em></p>
+																				<p align=3D"center" style=3D"line-height: 19.6px;">
+																					<span style=3D"font-family: arial, helvetica, =
+sans-serif; font-size: 14px; line-height: =
+19.600000381469727px;"><em>and</em></span></p>
+																				<p align=3D"center" style=3D"color: rgb(105, 105, =
+105); font-family: arial, helvetica, sans-serif; line-height: =
+19.6000003814697px;">
+																					<strong style=3D"color: rgb(0, 0, 0); font-family: =
+Arial, Helvetica, sans-serif; font-size: 18px; line-height: 19.6px;">Bill =
+Hampel</strong><br><span style=3D"color:#000000;"><span =
+style=3D"text-align: left;">Chief Economist and Chief Policy =
+Officer</span><br><em style=3D"text-align: left; color: rgb(34, 34, 34); =
+font-family: Arial, Verdana, sans-serif;"><font face=3D"Arial, Helvetica, =
+sans-serif">Credit Union National Association =
+(CUNA)</font></em></span></p>
+																				<p align=3D"center" style=3D"color: rgb(105, 105, =
+105); font-family: arial, helvetica, sans-serif; line-height: =
+19.6000003814697px;">
+																					<span style=3D"color: rgb(0, 0, =
+0);"><strong>WHEN</strong><br><span style=3D"line-height: =
+19.6000003814697px; text-align: left;">Thursday, October =
+29</span><br><span style=3D"line-height: 19.6000003814697px; text-align: =
+left;">1:00 p.m. ET / 10:00 a.m. PT</span></span></p>
+																				<p align=3D"center" style=3D"color: rgb(105, 105, =
+105); font-family: arial, helvetica, sans-serif; line-height: =
+19.6000003814697px;">
+																					<span style=3D"color: rgb(0, 0, 0);"><span =
+style=3D"line-height: 19.6000003814697px;"><span style=3D"font-family: =
+Arial, Helvetica, sans-serif; line-height: =
+1.4;"><strong>WHERE</strong></span></span><br><a href=3D"http://action.bus=
+inessfwd.org/page/m/3b1a3b80/46351693/a06986e/4ab7356/2180740025/VEsO/" =
+title=3D"http://www.businessfwd.org/blog/gdp-webinar"><span =
+style=3D"line-height: 19.6000003814697px; color: rgb(27, 117, 187);"><span =
+style=3D"font-family: Arial, Helvetica, sans-serif; line-height: =
+1.4;"><u>You will&nbsp;</u></span></span></a><a href=3D"http://action.busi=
+nessfwd.org/page/m/3b1a3b80/46351693/a06986e/4ab7356/2180740025/VEsP/" =
+title=3D"http://www.businessfwd.org/blog/gdp-webinar"><span =
+style=3D"line-height: 19.6000003814697px; color: rgb(27, 117, 187);"><span =
+style=3D"font-family: Arial, Helvetica, sans-serif; line-height: =
+1.4;"><u>receive</u></span></span></a><a href=3D"http://action.businessfwd=
+.org/page/m/3b1a3b80/46351693/a06986e/4ab7356/2180740025/VEsHBQ/" =
+title=3D"http://www.businessfwd.org/blog/gdp-webinar"><span =
+style=3D"line-height: 19.6000003814697px; color: rgb(27, 117, 187);"><span =
+style=3D"font-family: Arial, Helvetica, sans-serif; line-height: =
+1.4;"><u>&nbsp;a custom phone number and code when you =
+register.</u></span></span></a></span></p>
+																				<p style=3D"color: rgb(105, 105, 105); font-family: =
+arial, helvetica, sans-serif; line-height: 19.6000003814697px;">
+																					<span style=3D"color:#000000;">There will be time on =
+the call for you to ask questions, or you can submit them in advance by =
+emailing</span> <a href=3D"mailto:info@businessfwd.org?subject=3DQuestion%=
+20for%20GDP%20Webinar"><span =
+style=3D"color:#1b75bb;"><u>info@businessfwd.org</u></span></a>.</p>
+																				<p style=3D"color: rgb(105, 105, 105); font-family: =
+arial, helvetica, sans-serif; line-height: 19.6000003814697px;">
+																					<span style=3D"color: rgb(0, 0, 0);"><span =
+style=3D"line-height: 19.600000381469727px;"><em>Please note that to =
+foster a candid discussion, this call is off the record and not for press =
+purposes.</em></span></span></p>
+																				<p style=3D"color: rgb(105, 105, 105); font-family: =
+arial, helvetica, sans-serif; line-height: 19.6000003814697px;">
+																					<span style=3D"color: rgb(0, 0, 0);"><span =
+style=3D"line-height: 19.600000381469727px;"><font style=3D"line-height: =
+19.6000003814697px;"><span style=3D"line-height: =
+19.6000003814697px;"><span style=3D"line-height: =
+19.6000003814697px;"><span style=3D"font-family: Arial, Helvetica, =
+sans-serif; line-height: 1.4;">Here's the link to =
+register:&nbsp;</span></span></span></font></span></span><span =
+style=3D"line-height: 19.600000381469727px;"><font style=3D"line-height: =
+19.6000003814697px;"><span style=3D"line-height: 19.6px;"><span =
+style=3D"line-height: 19.6000003814697px;"><span style=3D"font-family: =
+Arial, Helvetica, sans-serif; line-height: 1.4;"><a href=3D"http://action.=
+businessfwd.org/page/m/3b1a3b80/46351693/a06986e/4ab7356/2180740025/VEsHBA=
+/" title=3D"http://www.businessfwd.org/blog/gdp-webinar"><span =
+style=3D"color:#1b75bb;"><u>http://www.businessfwd.org/blog/gdp-webinar</u=
+></span></a></span></span></span></font></span></p>
+																			</div>
+																		</center>
+																		<center>
+																			<div style=3D"text-align: left;">
+																				<p style=3D"color: rgb(105, 105, 105); line-height: =
+19.6px;">
+																					<span style=3D"color: rgb(0, 0, 0);">Can't make =
+it?&nbsp;</span><a href=3D"http://action.businessfwd.org/page/m/3b1a3b80/4=
+6351693/a06986e/4ab7357/2180740025/VEsHBw/" title=3D"http://action.busines=
+sfwd.org/page/s/rsvp-no-for-gdp-webinar"><span style=3D"color: rgb(27, =
+117, 187);"><u><strong>Sign up to receive a =
+recording.</strong></u></span></a></p>
+																				<p style=3D"color: rgb(105, 105, 105); line-height: =
+19.6px;">
+																					<span style=3D"font-family: Arial, Helvetica, =
+sans-serif; line-height: 1.4;"><span style=3D"color: rgb(0, 0, 0);">I hope =
+you can make it,&nbsp;</span></span></p>
+																				<p style=3D"color: rgb(105, 105, 105); line-height: =
+19.6px;">
+																					<span style=3D"color: rgb(0, 0, 0);"><strong><span =
+style=3D"font-family: Arial, Helvetica, sans-serif; line-height: =
+1.4;">Shumway Marshall</span></strong><br><span style=3D"font-family: =
+Arial, Helvetica, sans-serif; line-height: 1.4;">Digital Director<br><span =
+style=3D"font-family: Arial, Helvetica, sans-serif; line-height: =
+1.4;">Business Forward</span></span></span></p>
+																				<p style=3D"color: rgb(105, 105, 105); line-height: =
+19.6px;">
+																					<span style=3D"color: rgb(0, 0, 0);"><span =
+style=3D"font-family: Arial, Helvetica, sans-serif; line-height: =
+1.4;">P.S.&nbsp;</span><span style=3D"line-height: 19.6px; color: rgb(0, =
+0, 0);"><span style=3D"font-family: Arial, Helvetica, sans-serif; =
+line-height: 1.4;">There is no cost to attend Business Forward&rsquo;s =
+programming so please feel free to forward this invitation to your =
+colleagues.&nbsp;</span><strong style=3D"color: rgb(88, 88, 88); =
+line-height: 19.6px;">&nbsp;</strong></span></span></p>
+																			</div>
+																		</center>
+																	</div>
+																</center>
+															</td>
+														</tr><tr><td align=3D"center">
+																<p style=3D"font-size:10px; color:#555555; margin-top:2px; =
+font-family:arial, helvetica, sans-serif;">
+																	<a href=3D"http://action.businessfwd.org/page/m/3b1a3b80/=
+46351693/a06986e/4ab7353/2180740025/VEsHBg/" style=3D"font-family: arial, =
+sans-serif; font-size: 13px;" =
+title=3D"http://www.facebook.com/businessforward"><img align=3D"middle" =
+alt=3D"Facebook" height=3D"25" src=3D"http://action.businessfwd.org/page/-=
+/Social%20Assets/FB-f-Logo__blue_144.png" style=3D"margin-left: 3px; =
+margin-right: 3px;" width=3D"25"></a><a href=3D"http://action.businessfwd.=
+org/page/m/3b1a3b80/46351693/a06986e/4ab735c/2180740025/VEsHAQ/" =
+style=3D"font-family: arial, sans-serif; font-size: 13px;" =
+title=3D"http://www.twitter.com/businessforward"><img align=3D"middle" =
+alt=3D"Twitter" height=3D"25" src=3D"http://action.businessfwd.org/page/-/=
+Social%20Assets/twitter-bird-white-on-blue.png" style=3D"margin-left: 3px; =
+margin-right: 3px;" width=3D"25"></a><a href=3D"http://action.businessfwd.=
+org/page/m/3b1a3b80/46351693/a06986e/4ab735d/2180740025/VEsHAA/" =
+style=3D"font-family: arial, sans-serif; font-size: 13px;" =
+title=3D"http://www.businessfwd.org/"><img align=3D"middle" =
+alt=3D"Business Forward Logo" height=3D"25" src=3D"http://action.businessf=
+wd.org/page/-/Social%20Assets/logo-arrow.png" style=3D"margin-left: 3px; =
+margin-right: 3px;" width=3D"25"></a></p>
+																<div>
+																	<span style=3D"font-family: arial, helvetica, sans-serif; =
+font-size: 10px; color: rgb(105, 105, 105);"><span style=3D"line-height: =
+19px; text-align: left; font-family: arial, Verdana, sans-serif; =
+font-size: 16px;"><span style=3D"font-family: arial, helvetica, =
+sans-serif; font-size: 10px;">This email was sent to:&nbsp;</span><b =
+style=3D"color: rgb(85, 85, 85); font-family: arial, helvetica, =
+sans-serif; font-size: 10px;">John.Podesta@gmail.com</b></span><br>
+																	Click&nbsp;</span><a href=3D"http://action.businessfwd.or=
+g/page/m/3b1a3b80/46351693/a06986e/4ab735e/2180740025/VEsHAw/" =
+style=3D"font-family: arial, helvetica, sans-serif; font-size: 10px;" =
+title=3D"http://www.businessfwd.org/contact"><span style=3D"color: =
+rgb(105, 105, 105);">here</span></a><span style=3D"font-family: arial, =
+helvetica, sans-serif; font-size: 10px; color: rgb(105, 105, =
+105);">&nbsp;to contact us.<br>
+																	Click&nbsp;</span><a href=3D"http://action.businessfwd.or=
+g/page/m/3b1a3b80/46351693/a06986e/4ab735f/2180740025/VEsHAg/" =
+style=3D"font-family: arial, helvetica, sans-serif; font-size: 10px;" =
+title=3D"http://action.businessfwd.org/unsubscribe"><span style=3D"color: =
+rgb(105, 105, 105);">here</span></a><span style=3D"font-family: arial, =
+helvetica, sans-serif; font-size: 10px; color: rgb(105, 105, =
+105);">&nbsp;if you'd like to unsubscribe from these =
+messages.</span></div>
+																<div>
+																	&nbsp;</div>
+															</td>
+														</tr><tr><td align=3D"center">
+																&nbsp;</td>
+														</tr></tbody></table><p>
+													<img height=3D"1" src=3D"https://my.barackobama.com/page/o/55=
+c1ac54/6c2fbc34/33122aa96/16694d75/2232622305/open.gif" width=3D"1"></p>
+											</td>
+										</tr></tbody></table></invite:></span></span></td>
+						</tr></tbody></table></td>
+		</tr></tbody></table><p>
+	&nbsp;</p><p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<table align=3D"center" cellpadding=3D"0" cellspacing=3D"0" =
+style=3D"font-family: Helvetica; padding-top: 10px; " =
+width=3D"100%"><tbody><tr><td align=3D"center">
+				<table border=3D"1" bordercolor=3D"777777" cellpadding=3D"10" =
+cellspacing=3D"0" style=3D"border: 1px solid rgb(119, 119, 119); =
+"><tbody><tr><td align=3D"center" border=3D"0" style=3D"border: 0px; =
+padding: 10px; ">
+								<font color=3D"555555" face=3D"&#039;Helvetica =
+Neue&#039;,Helvetica,Segoe,&#039;Segoe UI&#039;,&#039;Segoe =
+WP&#039;,Calibri,Arial,clean,sans-serif" size=3D"1" style=3D"font-size: =
+11px; text-transform: uppercase; ">PAID FOR BY Business =
+forward</font></td>
+						</tr></tbody></table></td>
+		</tr><tr><td align=3D"center">
+				&nbsp;</td>
+		</tr></tbody></table><p>
+	This email was sent to&nbsp;John.Podesta@gmail.com. &nbsp;If you wish =
+to&nbsp;unsubscribe, go to&nbsp;<a href=3D"http://action.businessfwd.org/p=
+age/m/3b1a3b80/46351693/a06986e/4ab7358/2180740025/VEsHDQ/" =
+title=3D"http://action.businessfwd.org/page/unsubscribe">http://action.bus=
+inessfwd.org/page/unsubscribe</a></p><img src=3D"http://action.businessfwd=
+.org/page/o/3b1a3b80/46351693/a06986e/4ab7359/2180740025/open.gif" =
+width=3D"1" height=3D"1"></body></html>
+
+
+
+--b1_407d238db822814237c91117340721e3--

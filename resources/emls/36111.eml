@@ -1,0 +1,119 @@
+Delivered-To: john.podesta@gmail.com
+Received: by 10.25.43.10 with SMTP id r10csp921384lfr;
+        Sun, 26 Jul 2015 07:30:01 -0700 (PDT)
+X-Received: by 10.13.237.1 with SMTP id w1mr25210093ywe.132.1437921000931;
+        Sun, 26 Jul 2015 07:30:00 -0700 (PDT)
+Return-Path: <meganrouse@gmail.com>
+Received: from mail-yk0-x22d.google.com (mail-yk0-x22d.google.com. [2607:f8b0:4002:c07::22d])
+        by mx.google.com with ESMTPS id t123si10427747ywe.6.2015.07.26.07.30.00
+        for <john.podesta@gmail.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 26 Jul 2015 07:30:00 -0700 (PDT)
+Received-SPF: pass (google.com: domain of meganrouse@gmail.com designates 2607:f8b0:4002:c07::22d as permitted sender) client-ip=2607:f8b0:4002:c07::22d;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of meganrouse@gmail.com designates 2607:f8b0:4002:c07::22d as permitted sender) smtp.mail=meganrouse@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-yk0-x22d.google.com with SMTP id y190so51417998yka.3
+        for <john.podesta@gmail.com>; Sun, 26 Jul 2015 07:30:00 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=ic2sbuJGC3FvizvFcET6AMyn1tEybCHwgpkxboAogk4=;
+        b=Fnoe0Vzr2/ZKMCgijEl4X3I/GjvX/BnLprfbV1sYzKp+58h4GkqbbI+qbs/nwgLIyi
+         4cpmtvmejT+8kXDTBvz0YYYw/jv/FCZiv5TmLU4EjwNltpPhDNRW8ELZwhcXZo9LwHd9
+         GDZglXC3yotNPS+pjxcHTbCgAeNTC8i9qF+n6yLq3H79E+sng/TkYpWbC0UbJxhZc5TJ
+         0dhAFzKOMiT92JclOzn9xOk+dEpOLfeV7YUbDn+efTzfcGVFxhzDs5qeqhp+dqrifjJC
+         KS6TJGmwXUUaEDFto5Y408DuPZ0FunVoVgSIBPS89W3BwSsJARy9uPCKQtwap8IoGoR5
+         ippw==
+MIME-Version: 1.0
+X-Received: by 10.13.222.5 with SMTP id h5mr25422082ywe.124.1437921000344;
+ Sun, 26 Jul 2015 07:30:00 -0700 (PDT)
+Received: by 10.37.215.14 with HTTP; Sun, 26 Jul 2015 07:30:00 -0700 (PDT)
+In-Reply-To: <CAE6FiQ-QL-LqXostXXj_+w1ya3vud9y88AJgJOq3A_=yi5-atQ@mail.gmail.com>
+References: <B9B18B45-C5D3-4AB0-A962-35684AD484B9@gmail.com>
+	<CAP-MWF4mMPH-R23C=n+Wt9CdvVOCxOn9n7f9QHVhOm6EVcx-dw@mail.gmail.com>
+	<CAAVDwMKGZA1OcBK2DObHbrxGA9wWbV3b68N+njuHGm_oJfkOWw@mail.gmail.com>
+	<CAE6FiQ-QL-LqXostXXj_+w1ya3vud9y88AJgJOq3A_=yi5-atQ@mail.gmail.com>
+Date: Sun, 26 Jul 2015 07:30:00 -0700
+Message-ID: <CAAVDwMLQ4rGM9QTnO4x9HbrF3RdJiqe55jy6wD12b6=USb5_BQ@mail.gmail.com>
+Subject: Re: Swim meet
+From: Megan Rouse <meganrouse@gmail.com>
+To: John Podesta <john.podesta@gmail.com>
+Content-Type: multipart/alternative; boundary=94eb2c07d0f070d052051bc812b9
+
+--94eb2c07d0f070d052051bc812b9
+Content-Type: text/plain; charset=UTF-8
+
+Kids and I drive up Tuesday morning. Gordon drives up Thursday night. We
+stay through Sunday or Monday morning. Our friends the baalmans are coming
+on Thursday and staying the weekend at our place.  Gordon made a golf tee
+time for Friday. You in for that?
+
+On Sunday, July 26, 2015, John Podesta <john.podesta@gmail.com> wrote:
+
+> What's your Truckee schedules?
+>
+> On Saturday, July 25, 2015, Megan Rouse <meganrouse@gmail.com
+> <javascript:_e(%7B%7D,'cvml','meganrouse@gmail.com');>> wrote:
+>
+>> Awesome. Both kids improved their times in every race. Both had big
+>> improvements in breaststroke. Long day, arrived at 6:30am and left after
+>> 5.  Also Very fun day. Went out to dinner to celebrate and now we are all
+>> in pajamas. Can't wait to see you all soon.
+>>
+>> On Saturday, July 25, 2015, Gabe Podesta <gpodesta@gmail.com> wrote:
+>>
+>>> How'd it go? Lots of championships?!
+>>>
+>>> On Saturday, July 25, 2015, Megan Rouse <meganrouse@gmail.com> wrote:
+>>>
+>>>> Pic does not fully capture scope of this all day event. 10 warm up
+>>>> lanes, 10 racing lanes, 8 teams. Good swims so far in medley relay for both
+>>>> bel and Gabe.
+>>>> Hope you are enjoying your day.
+>>>>
+>>>>
+>>>
+>>> --
+>>> Gabe Podesta
+>>>
+>>
+
+--94eb2c07d0f070d052051bc812b9
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Kids and I=C2=A0<span></span>drive up Tuesday morning. Gordon drives up Thu=
+rsday night. We stay through Sunday or Monday morning. Our friends the baal=
+mans are coming on Thursday and staying the weekend at our place.=C2=A0 Gor=
+don made a golf tee time for Friday. You in for that?=C2=A0<br><br>On Sunda=
+y, July 26, 2015, John Podesta &lt;<a href=3D"mailto:john.podesta@gmail.com=
+">john.podesta@gmail.com</a>&gt; wrote:<br><blockquote class=3D"gmail_quote=
+" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">W=
+hat&#39;s your Truckee schedules?<br><br>On Saturday, July 25, 2015, Megan =
+Rouse &lt;<a href=3D"javascript:_e(%7B%7D,&#39;cvml&#39;,&#39;meganrouse@gm=
+ail.com&#39;);" target=3D"_blank">meganrouse@gmail.com</a>&gt; wrote:<br><b=
+lockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1px =
+#ccc solid;padding-left:1ex">Awesome. Both kids improved their times in eve=
+ry race. Both had big improvements in breaststroke. Long day, arrived at 6:=
+30am and left after 5.=C2=A0 Also=C2=A0Very fun day. Went out to dinner=C2=
+=A0to celebrate and now we are all in pajamas. Can&#39;t wait to see you al=
+l soon.=C2=A0<span></span><br><br>On Saturday, July 25, 2015, Gabe Podesta =
+&lt;<a>gpodesta@gmail.com</a>&gt; wrote:<br><blockquote class=3D"gmail_quot=
+e" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">=
+How&#39;d it go? Lots of championships?!<span></span><br><br>On Saturday, J=
+uly 25, 2015, Megan Rouse &lt;<a>meganrouse@gmail.com</a>&gt; wrote:<br><bl=
+ockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1px #=
+ccc solid;padding-left:1ex">Pic does not fully capture scope of this all da=
+y event. 10 warm up lanes, 10 racing lanes, 8 teams. Good swims so far in m=
+edley relay for both bel and Gabe.<br>
+Hope you are enjoying your day.<br>
+<br>
+</blockquote><br><br>-- <br>Gabe Podesta<br>
+</blockquote>
+</blockquote>
+</blockquote>
+
+--94eb2c07d0f070d052051bc812b9--

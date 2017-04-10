@@ -1,0 +1,628 @@
+Delivered-To: john.podesta@gmail.com
+Received: by 10.25.24.31 with SMTP id o31csp128973lfi;
+        Fri, 13 Feb 2015 13:11:01 -0800 (PST)
+X-Received: by 10.68.162.130 with SMTP id ya2mr18027664pbb.113.1423861860391;
+        Fri, 13 Feb 2015 13:11:00 -0800 (PST)
+Return-Path: <egelber@hrcoffice.com>
+Received: from na01-bn1-obe.outbound.protection.outlook.com (mail-bn1bon0071.outbound.protection.outlook.com. [157.56.111.71])
+        by mx.google.com with ESMTPS id kn1si1409761pdb.230.2015.02.13.13.10.59
+        for <john.podesta@gmail.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Fri, 13 Feb 2015 13:11:00 -0800 (PST)
+Received-SPF: neutral (google.com: 157.56.111.71 is neither permitted nor denied by domain of egelber@hrcoffice.com) client-ip=157.56.111.71;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 157.56.111.71 is neither permitted nor denied by domain of egelber@hrcoffice.com) smtp.mail=egelber@hrcoffice.com
+Received: from BN1PR0301MB0740.namprd03.prod.outlook.com (25.160.78.147) by
+ BN1PR0301MB0740.namprd03.prod.outlook.com (25.160.78.147) with Microsoft SMTP
+ Server (TLS) id 15.1.87.18; Fri, 13 Feb 2015 21:10:55 +0000
+Received: from BN1PR0301MB0740.namprd03.prod.outlook.com ([25.160.78.147]) by
+ BN1PR0301MB0740.namprd03.prod.outlook.com ([25.160.78.147]) with mapi id
+ 15.01.0087.013; Fri, 13 Feb 2015 21:10:55 +0000
+From: Ethan Gelber <egelber@hrcoffice.com>
+To: John Podesta <john.podesta@gmail.com>
+Subject: RE: Reminder: Policy Call TODAY @ 4 PM
+Thread-Topic: Reminder: Policy Call TODAY @ 4 PM
+Thread-Index: AQHQR7+tl3zpZpBWYUKYHYDkkEMunZzvEgoAgAAASvCAAAFJMw==
+Date: Fri, 13 Feb 2015 21:10:55 +0000
+Message-ID: <BN1PR0301MB0740D9DC9A71698E73674D56B2230@BN1PR0301MB0740.namprd03.prod.outlook.com>
+References: <CAME8pxXYetudx3zc8GjQVKUre0N9H60J+0j19Lytb1uO_mmqAQ@mail.gmail.com>
+	<3D0F111A-97B0-49FC-A901-A80D2724AD77@gmail.com>
+	<6E84840A-91E9-438C-ACEE-D224AD838F57@gmail.com>
+	<F11B4E34-1C3D-4066-993A-3244750A29FC@americanprogress.org>
+	<0E1950CA-B708-4389-A9CD-F09666A92B54@tfreedmanconsulting.com>
+	<20150206155945.5882003.29498.8680@jenningsps.com>
+	<CAME8pxVB4TSy6Aet1h1qxUbTY3CXhsmHS2Vq0km43AHFjCryBg@mail.gmail.com>
+	<1423238691398.18925@hrcoffice.com>
+	<EC94845E-D73F-4883-906F-286D37C7C66D@gmail.com>
+	<1423659504185.84134@hrcoffice.com>
+	<CAME8pxVTOx6xr33u5EwE8V2Xiv8EtRX_sY9LzGE6g=Tsv+VMAw@mail.gmail.com>
+	<1423854176832.20357@hrcoffice.com>,<CAE6FiQ8M2GrnfoQKb1+gQKmz89s8NHrujJ9Vf-RdYQrwyhEagA@mail.gmail.com>,<BN1PR0301MB0740DB2DD90C2E7460B5E82FB2230@BN1PR0301MB0740.namprd03.prod.outlook.com>
+In-Reply-To: <BN1PR0301MB0740DB2DD90C2E7460B5E82FB2230@BN1PR0301MB0740.namprd03.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+x-originating-ip: [2600:1003:b000:2b82:c134:de59:1173:3b88]
+authentication-results: gmail.com; dkim=none (message not signed)
+ header.d=none;
+x-microsoft-antispam: BCL:0;PCL:0;RULEID:;SRVR:BN1PR0301MB0740;
+x-exchange-antispam-report-test: UriScan:;
+x-exchange-antispam-report-cfa-test: BCL:0;PCL:0;RULEID:;SRVR:BN1PR0301MB0740;
+x-forefront-prvs: 0486A0CB86
+x-forefront-antispam-report: SFV:NSPM;SFS:(10009020)(57704003)(23433003)(164054003)(24454002)(53434003)(377454003)(51704005)(12213003)(41574002)(87936001)(62966003)(2656002)(50986999)(107886001)(77156002)(110136001)(86362001)(450100001)(19580405001)(19580395003)(122556002)(102836002)(92566002)(33656002)(40100003)(2950100001)(16236675004)(2900100001)(46102003)(106116001)(99286002)(54356999)(76176999)(74316001)(93886004)(76576001);DIR:OUT;SFP:1101;SCL:1;SRVR:BN1PR0301MB0740;H:BN1PR0301MB0740.namprd03.prod.outlook.com;FPR:;SPF:None;MLV:sfv;LANG:en;
+Content-Type: multipart/alternative;
+	boundary="_000_BN1PR0301MB0740D9DC9A71698E73674D56B2230BN1PR0301MB0740_"
+MIME-Version: 1.0
+X-OriginatorOrg: hrcoffice.com
+X-MS-Exchange-CrossTenant-originalarrivaltime: 13 Feb 2015 21:10:55.4595
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: cd8891aa-8599-4062-9818-7b7cb05e1dad
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BN1PR0301MB0740
+
+--_000_BN1PR0301MB0740D9DC9A71698E73674D56B2230BN1PR0301MB0740_
+Content-Type: text/plain; charset="windows-1256"
+Content-Transfer-Encoding: quoted-printable
+
+Were you able to join? I did not know there was a cap.
+________________________________
+From: Ethan Gelber<mailto:egelber@hrcoffice.com>
+Sent: =FD2/=FD13/=FD2015 4:06 PM
+To: John Podesta<mailto:john.podesta@gmail.com>
+Subject: RE: Reminder: Policy Call TODAY @ 4 PM
+
+Try now. Apologies.
+________________________________
+From: John Podesta<mailto:john.podesta@gmail.com>
+Sent: =FD2/=FD13/=FD2015 4:05 PM
+To: Ethan Gelber<mailto:egelber@hrcoffice.com>
+Subject: Re: Reminder: Policy Call TODAY @ 4 PM
+
+
+Conference is full
+Can't get on.
+
+On Feb 13, 2015 2:03 PM, "Ethan Gelber" <egelber@hrcoffice.com<mailto:egelb=
+er@hrcoffice.com>> wrote:
+
+?Just a reminder:
+
+
+Policy Call
+
+TODAY @ 4 PM
+
+
+Call-in #:
+
+Conference: 585-632-4163<tel:585-632-4163>
+
+PIN: 09584
+
+
+Talk to you this afternoon.
+
+
+Thanks,
+
+Ethan
+
+
+________________________________
+From: Jake Sullivan <jake.sullivan@gmail.com<mailto:jake.sullivan@gmail.com=
+>>
+Sent: Thursday, February 12, 2015 4:11 PM
+To: Ethan Gelber
+Cc: Chris Jennings; tom@tfreedmanconsulting.com<mailto:tom@tfreedmanconsult=
+ing.com>; Neera Tanden; Gene Sperling; John Podesta; Cheryl Mills; Ann O'Le=
+ary; Dan Schwerin; Tom.Nides@gmail.com<mailto:Tom.Nides@gmail.com>
+Subject: Re: Policy call Friday, February 13
+
+All -- looking forward to the call tomorrow.  We're hoping to cover the fol=
+lowing ground:
+
+1.  The overall policy narrative and areas of emphasis
+
+2.  Whether there are substantial economic policy ideas/proposals that we h=
+ave not included in this document
+- do we need more boldness/freshness?
+- do we need more/different ideas that cut against the grain or take on Dem=
+ sacred cows?
+
+3.  Whether there are ideas/proposals in this document that we should jetti=
+son
+
+4.  The pollution fee
+
+5.  Middle class tax cuts
+
+Thanks!
+
+On Wed, Feb 11, 2015 at 7:58 AM, Ethan Gelber <egelber@hrcoffice.com<mailto=
+:egelber@hrcoffice.com>> wrote:
+
+All,
+
+
+As Jake promised, here is the memo in advance of Friday's call. If the new =
+time works for everyone (4 PM), I will resend the calendar invite.?
+
+
+Thanks,
+
+Ethan
+
+
+________________________________
+From: Jake Sullivan <jake.sullivan@gmail.com<mailto:jake.sullivan@gmail.com=
+>>
+Sent: Wednesday, February 11, 2015 12:32 AM?
+To: Ethan Gelber
+Cc: Chris Jennings; Tom Freedman; Neera Tanden; Gene Sperling; Nides, Thoma=
+s R; John Podesta; Cheryl Mills; Ann O'Leary; Dan Schwerin
+Subject: Re: Policy call next Thursday, February 12
+
+All - hope you are well.  In advance of our call Friday, Ethan will be circ=
+ulating a document that sets forth a range of policy options on the major e=
+conomic issues.  It is not exhaustive and does not cover every subject, but=
+ it seeks to get at who HRC is fighting for and who she is standing up agai=
+nst.
+
+We would like to use the call Friday to get your feedback on our general po=
+licy frame and your thoughts on the policy areas contained in (and absent f=
+rom!) the document.
+
+On logistics, begging your patience and indulgence, could everyone do 4 pm =
+on Friday instead?  Some participants have had their travel plans adjusted.=
+  I'm really sorry for shifting goalposts!
+
+
+
+On Feb 6, 2015, at 11:04 AM, Ethan Gelber <egelber@hrcoffice.com<mailto:ege=
+lber@hrcoffice.com>> wrote:
+
+
+Great. Here is the call-in info:
+
+
+Conference: 585-632-4163<tel:585-632-4163>
+
+PIN: 09584?
+
+
+I will send around calendar invites now as well. Thanks.
+
+________________________________
+From: Jake Sullivan <jake.sullivan@gmail.com<mailto:jake.sullivan@gmail.com=
+>>
+Sent: Friday, February 6, 2015 11:00 AM
+To: Chris Jennings
+Cc: Tom Freedman; Neera Tanden; Neera Tanden; Gene Sperling; Nides, Thomas =
+R; John Podesta; Cheryl Mills; Ann O'Leary; Dan Schwerin; Ethan Gelber
+Subject: Re: Policy call next Thursday, February 12
+
+Great.  We have a quorum.  Look forward to talking then.  Ethan will send a=
+round call-in info.
+
+On Fri, Feb 6, 2015 at 10:59 AM, Chris Jennings <ccj@jenningsps.com<mailto:=
+ccj@jenningsps.com>> wrote:
+Ok, I am good for 2:00 on 13th.
+
+Sent from my BlackBerry 10 smartphone on the Verizon Wireless 4G LTE networ=
+k.
+  Original Message
+From: Tom Freedman
+Sent: Friday, February 6, 2015 10:27 AM
+To: Neera Tanden
+Cc: Jake Sullivan; Neera Tanden; Gene Sperling; Chris Jennings; Nides, Thom=
+as R; John Podesta; Cheryl Mills; Ann O'Leary; Dan Schwerin; Ethan Gelber
+Subject: Re: Policy call next Thursday, February 12
+
+
+Great, I can do 13th as well. Tom
+
+Sent from my iPhone
+
+> On Feb 6, 2015, at 10:10 AM, Neera Tanden <ntanden@americanprogress.org<m=
+ailto:ntanden@americanprogress.org>> wrote:
+>
+> Works for me.
+>
+> Can we move all email for me to my above gmail account?  Thanks!
+>
+> Sent from my iPhone
+>
+>> On Feb 6, 2015, at 5:01 PM, Jake Sullivan <jake.sullivan@gmail.com<mailt=
+o:jake.sullivan@gmail.com>> wrote:
+>>
+>> How is 2 pm on the 13th for people?
+>>
+>>
+>>
+>>> On Feb 6, 2015, at 9:57 AM, Gene Sperling <gbsperling@gmail.com<mailto:=
+gbsperling@gmail.com>> wrote:
+>>>
+>>> So sorry -- flying back from Australia on 12th. Any time on 13th would =
+work for me.
+>>>
+>>> Sent from my iPhone
+>>>
+>>>> On Feb 6, 2015, at 6:37 AM, Jake Sullivan <jake.sullivan@gmail.com<mai=
+lto:jake.sullivan@gmail.com>> wrote:
+>>>>
+>>>> Hi guys,
+>>>>
+>>>> Dan, Ann, Ethan, and I are hoping to assemble our favorite people on a=
+ conference call to talk about the policy agenda heading into 2016.  This w=
+ould just be us, not HRC.  We're hoping to get your assessments of the stat=
+e of play after the SOTU, the budget, the CAP report, and some of the early=
+ Republican offerings -- and your advice on how to move forward from here.
+>>>>
+>>>> Would 1 pm on the 12th work for people?  We'd like to budget an hour. =
+ And after this call we'd like to find a time to get the group together wit=
+h HRC.
+>>>>
+>>>> Please let me know if that date/time work, and if not, if there are ot=
+her times on the 12th that would.
+>>>>
+>>>> Thanks and best,
+>>>> Jake
+
+
+
+--_000_BN1PR0301MB0740D9DC9A71698E73674D56B2230BN1PR0301MB0740_
+Content-Type: text/html; charset="windows-1256"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dwindows-1=
+256">
+<meta content=3D"text/html; charset=3Dwindows-1256">
+<meta content=3D"text/html; charset=3Dutf-8">
+</head>
+<body>
+<div>
+<div style=3D"font-size:11pt; font-family:Calibri,sans-serif">Were you able=
+ to join? I did not know there was a cap.
+</div>
+</div>
+<div dir=3D"ltr">
+<hr>
+<span style=3D"font-size:11pt; font-family:Calibri,sans-serif; font-weight:=
+bold">From:
+</span><span style=3D"font-size:11pt; font-family:Calibri,sans-serif"><a hr=
+ef=3D"mailto:egelber@hrcoffice.com">Ethan Gelber</a></span><br>
+<span style=3D"font-size:11pt; font-family:Calibri,sans-serif; font-weight:=
+bold">Sent:
+</span><span style=3D"font-size:11pt; font-family:Calibri,sans-serif">=FD2/=
+=FD13/=FD2015 4:06 PM</span><br>
+<span style=3D"font-size:11pt; font-family:Calibri,sans-serif; font-weight:=
+bold">To:
+</span><span style=3D"font-size:11pt; font-family:Calibri,sans-serif"><a hr=
+ef=3D"mailto:john.podesta@gmail.com">John Podesta</a></span><br>
+<span style=3D"font-size:11pt; font-family:Calibri,sans-serif; font-weight:=
+bold">Subject:
+</span><span style=3D"font-size:11pt; font-family:Calibri,sans-serif">RE: R=
+eminder: Policy Call TODAY @ 4 PM</span><br>
+<br>
+</div>
+<div>
+<div>
+<div style=3D"font-size:11pt; font-family:Calibri,sans-serif">Try now. Apol=
+ogies.</div>
+</div>
+<div dir=3D"ltr">
+<hr>
+<span style=3D"font-size:11pt; font-family:Calibri,sans-serif; font-weight:=
+bold">From:
+</span><span style=3D"font-size:11pt; font-family:Calibri,sans-serif"><a hr=
+ef=3D"mailto:john.podesta@gmail.com">John Podesta</a></span><br>
+<span style=3D"font-size:11pt; font-family:Calibri,sans-serif; font-weight:=
+bold">Sent:
+</span><span style=3D"font-size:11pt; font-family:Calibri,sans-serif">=FD2/=
+=FD13/=FD2015 4:05 PM</span><br>
+<span style=3D"font-size:11pt; font-family:Calibri,sans-serif; font-weight:=
+bold">To:
+</span><span style=3D"font-size:11pt; font-family:Calibri,sans-serif"><a hr=
+ef=3D"mailto:egelber@hrcoffice.com">Ethan Gelber</a></span><br>
+<span style=3D"font-size:11pt; font-family:Calibri,sans-serif; font-weight:=
+bold">Subject:
+</span><span style=3D"font-size:11pt; font-family:Calibri,sans-serif">Re: R=
+eminder: Policy Call TODAY @ 4 PM</span><br>
+<br>
+</div>
+<div>
+<p dir=3D"ltr">Conference is full<br>
+Can't get on.</p>
+<div class=3D"gmail_quote">On Feb 13, 2015 2:03 PM, &quot;Ethan Gelber&quot=
+; &lt;<a href=3D"mailto:egelber@hrcoffice.com">egelber@hrcoffice.com</a>&gt=
+; wrote:<br type=3D"attribution">
+<blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex; border-left:1=
+px #ccc solid; padding-left:1ex">
+<div dir=3D"ltr">
+<div style=3D"font-size:12pt; color:#000000; background-color:#ffffff; font=
+-family:Calibri,Arial,Helvetica,sans-serif">
+<p style=3D"margin-top:0px; margin-bottom:0px">&#8203;Just a reminder:<br>
+</p>
+<p style=3D"margin-top:0px; margin-bottom:0px"><br>
+</p>
+<p style=3D"margin-top:0px; margin-bottom:0px">Policy Call<br>
+</p>
+<p style=3D"margin-top:0px; margin-bottom:0px">TODAY @ 4 PM<br>
+</p>
+<p style=3D"margin-top:0px; margin-bottom:0px"><br>
+</p>
+<p style=3D"margin-top:0px; margin-bottom:0px"><span style=3D"text-decorati=
+on:underline">Call-in #:</span><br>
+</p>
+<p style=3D"margin-top:0px; margin-bottom:0px">Conference:&nbsp;<a href=3D"=
+tel:585-632-4163" value=3D"&#43;15856324163" target=3D"_blank">585-632-4163=
+</a>&nbsp;</p>
+<p style=3D"margin-top:0px; margin-bottom:0px">PIN: 09584<br>
+</p>
+<p style=3D"margin-top:0px; margin-bottom:0px"><br>
+</p>
+<p style=3D"margin-top:0px; margin-bottom:0px">Talk to you this afternoon.<=
+br>
+</p>
+<p style=3D"margin-top:0px; margin-bottom:0px"><br>
+</p>
+<p style=3D"margin-top:0px; margin-bottom:0px">Thanks,<br>
+</p>
+<p style=3D"margin-top:0px; margin-bottom:0px">Ethan<br>
+</p>
+<p style=3D"margin-top:0px; margin-bottom:0px"><br>
+</p>
+<div style=3D"color:rgb(33,33,33)">
+<hr style=3D"display:inline-block; width:98%">
+<div dir=3D"ltr"><font face=3D"Calibri, sans-serif" color=3D"#000000" style=
+=3D"font-size:11pt"><b>From:</b> Jake Sullivan &lt;<a href=3D"mailto:jake.s=
+ullivan@gmail.com" target=3D"_blank">jake.sullivan@gmail.com</a>&gt;<br>
+<b>Sent:</b> Thursday, February 12, 2015 4:11 PM<br>
+<b>To:</b> Ethan Gelber<br>
+<b>Cc:</b> Chris Jennings; <a href=3D"mailto:tom@tfreedmanconsulting.com" t=
+arget=3D"_blank">
+tom@tfreedmanconsulting.com</a>; Neera Tanden; Gene Sperling; John Podesta;=
+ Cheryl Mills; Ann O'Leary; Dan Schwerin;
+<a href=3D"mailto:Tom.Nides@gmail.com" target=3D"_blank">Tom.Nides@gmail.co=
+m</a><br>
+<b>Subject:</b> Re: Policy call Friday, February 13</font>
+<div>&nbsp;</div>
+</div>
+<div>
+<div dir=3D"ltr">
+<div>All -- looking forward to the call tomorrow.&nbsp; We're hoping to cov=
+er the following ground:</div>
+<div><br>
+</div>
+<div>
+<div>1.&nbsp; The overall policy narrative and areas of emphasis</div>
+<div><br>
+</div>
+<div>2.&nbsp; Whether there are substantial economic policy ideas/proposals=
+ that we have not included in this document</div>
+<div>- do we need more boldness/freshness?</div>
+<div>- do we need more/different ideas that cut against the grain or take o=
+n Dem sacred cows?</div>
+<div><br>
+</div>
+<div>3.&nbsp; Whether there are ideas/proposals in this document that we sh=
+ould jettison</div>
+<div><br>
+</div>
+<div>4.&nbsp; The pollution fee</div>
+<div><br>
+</div>
+<div>5.&nbsp; Middle class tax cuts</div>
+<div><br>
+</div>
+<div>Thanks!</div>
+</div>
+</div>
+<div class=3D"gmail_extra"><br>
+<div class=3D"gmail_quote">On Wed, Feb 11, 2015 at 7:58 AM, Ethan Gelber <s=
+pan dir=3D"ltr">
+&lt;<a href=3D"mailto:egelber@hrcoffice.com" target=3D"_blank">egelber@hrco=
+ffice.com</a>&gt;</span> wrote:<br>
+<blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex; border-left:1=
+px #ccc solid; padding-left:1ex">
+<div dir=3D"ltr">
+<div style=3D"color:rgb(0,0,0); font-family:Calibri,Arial,Helvetica,sans-se=
+rif; font-size:12pt; background-color:rgb(255,255,255)">
+<p style=3D"margin-top:0px; margin-bottom:0px">All,<br>
+</p>
+<p style=3D"margin-top:0px; margin-bottom:0px"><br>
+</p>
+<p style=3D"margin-top:0px; margin-bottom:0px">As Jake promised, here is th=
+e&nbsp;memo in advance of&nbsp;Friday's call. If the new time works for eve=
+ryone (4 PM), I will resend the calendar invite.&#8203;<br>
+</p>
+<p style=3D"margin-top:0px; margin-bottom:0px"><br>
+</p>
+<p style=3D"margin-top:0px; margin-bottom:0px">Thanks,<br>
+</p>
+<p style=3D"margin-top:0px; margin-bottom:0px">Ethan<br>
+</p>
+<p style=3D"margin-top:0px; margin-bottom:0px"><br>
+</p>
+<div dir=3D"auto" style=3D"color:rgb(33,33,33)">
+<hr style=3D"width:98%; display:inline-block">
+<div dir=3D"ltr"><font color=3D"#000000" face=3D"Calibri, sans-serif" style=
+=3D"font-size:11pt"><b>From:</b> Jake Sullivan &lt;<a href=3D"mailto:jake.s=
+ullivan@gmail.com" target=3D"_blank">jake.sullivan@gmail.com</a>&gt;<br>
+<b>Sent:</b> Wednesday, February 11, 2015 12:32 AM&#8203;<br>
+<b>To:</b> Ethan Gelber<br>
+<b>Cc:</b> Chris Jennings; Tom Freedman; Neera Tanden; Gene Sperling; Nides=
+, Thomas R; John Podesta; Cheryl Mills; Ann O'Leary; Dan Schwerin<br>
+<b>Subject:</b> Re: Policy call next Thursday, February 12</font>
+<div>&nbsp;</div>
+</div>
+<div>
+<div>All - hope you are well.&nbsp; In advance of our call Friday, Ethan wi=
+ll be circulating a document that sets forth a range of policy options on t=
+he major economic issues.&nbsp; It is not exhaustive and does not cover eve=
+ry subject, but it seeks to get at who HRC
+ is fighting for and who she is standing up against. &nbsp;</div>
+<div><br>
+</div>
+<div>We would like to use the call Friday to get your feedback on our gener=
+al policy frame and your thoughts on the policy areas contained in (and abs=
+ent from!) the document. &nbsp;</div>
+<div><br>
+</div>
+<div>On logistics, begging your patience and indulgence, could everyone do =
+4 pm on Friday instead?&nbsp; Some participants have had their travel plans=
+ adjusted.&nbsp; I'm really sorry for shifting goalposts!<br>
+<br>
+<br>
+</div>
+<div><br>
+On Feb 6, 2015, at 11:04 AM, Ethan Gelber &lt;<a href=3D"mailto:egelber@hrc=
+office.com" target=3D"_blank">egelber@hrcoffice.com</a>&gt; wrote:<br>
+<br>
+</div>
+<blockquote type=3D"cite">
+<div>
+<div style=3D"color:rgb(0,0,0); font-family:Calibri,Arial,Helvetica,sans-se=
+rif; font-size:12pt; background-color:rgb(255,255,255)">
+<p style=3D"margin-top:0px; margin-bottom:0px">Great. Here is the call-in i=
+nfo:<br>
+</p>
+<p style=3D"margin-top:0px; margin-bottom:0px"><br>
+</p>
+<p style=3D"margin-top:0px; margin-bottom:0px">Conference:&nbsp;<a href=3D"=
+tel:585-632-4163" value=3D"&#43;15856324163" target=3D"_blank">585-632-4163=
+</a>&nbsp;</p>
+<p style=3D"margin-top:0px; margin-bottom:0px">PIN: 09584&#8203;<br>
+</p>
+<p style=3D"margin-top:0px; margin-bottom:0px"><br>
+</p>
+<p style=3D"margin-top:0px; margin-bottom:0px">I will send around calendar =
+invites now&nbsp;as well. Thanks.<br>
+</p>
+<div style=3D"color:rgb(33,33,33)">
+<hr style=3D"width:98%; display:inline-block">
+<div dir=3D"ltr"><font color=3D"#000000" face=3D"Calibri, sans-serif" style=
+=3D"font-size:11pt"><b>From:</b> Jake Sullivan &lt;<a href=3D"mailto:jake.s=
+ullivan@gmail.com" target=3D"_blank">jake.sullivan@gmail.com</a>&gt;<br>
+<b>Sent:</b> Friday, February 6, 2015 11:00 AM<br>
+<b>To:</b> Chris Jennings<br>
+<b>Cc:</b> Tom Freedman; Neera Tanden; Neera Tanden; Gene Sperling; Nides, =
+Thomas R; John Podesta; Cheryl Mills; Ann O'Leary; Dan Schwerin; Ethan Gelb=
+er<br>
+<b>Subject:</b> Re: Policy call next Thursday, February 12</font>
+<div>&nbsp;</div>
+</div>
+<div>
+<div dir=3D"ltr">Great.&nbsp; We have a quorum.&nbsp; Look forward to talki=
+ng then.&nbsp; Ethan will send around call-in info.</div>
+<div class=3D"gmail_extra"><br>
+<div class=3D"gmail_quote">On Fri, Feb 6, 2015 at 10:59 AM, Chris Jennings =
+<span dir=3D"ltr">
+&lt;<a href=3D"mailto:ccj@jenningsps.com" target=3D"_blank">ccj@jenningsps.=
+com</a>&gt;</span> wrote:<br>
+<blockquote class=3D"gmail_quote" style=3D"margin:0px 0px 0px 0.8ex; paddin=
+g-left:1ex; border-left-color:rgb(204,204,204); border-left-width:1px; bord=
+er-left-style:solid">
+Ok, I am good for 2:00 on 13th.<br>
+<br>
+Sent from my BlackBerry 10 smartphone on the Verizon Wireless 4G LTE networ=
+k.<br>
+&nbsp; Original Message<br>
+From: Tom Freedman<br>
+Sent: Friday, February 6, 2015 10:27 AM<br>
+To: Neera Tanden<br>
+Cc: Jake Sullivan; Neera Tanden; Gene Sperling; Chris Jennings; Nides, Thom=
+as R; John Podesta; Cheryl Mills; Ann O'Leary; Dan Schwerin; Ethan Gelber<b=
+r>
+<span>Subject: Re: Policy call next Thursday, February 12<br>
+<br>
+<br>
+</span>
+<div>
+<div>Great, I can do 13th as well. Tom<br>
+<br>
+Sent from my iPhone<br>
+<br>
+&gt; On Feb 6, 2015, at 10:10 AM, Neera Tanden &lt;<a href=3D"mailto:ntande=
+n@americanprogress.org" target=3D"_blank">ntanden@americanprogress.org</a>&=
+gt; wrote:<br>
+&gt;<br>
+&gt; Works for me.<br>
+&gt;<br>
+&gt; Can we move all email for me to my above gmail account?&nbsp; Thanks!<=
+br>
+&gt;<br>
+&gt; Sent from my iPhone<br>
+&gt;<br>
+&gt;&gt; On Feb 6, 2015, at 5:01 PM, Jake Sullivan &lt;<a href=3D"mailto:ja=
+ke.sullivan@gmail.com" target=3D"_blank">jake.sullivan@gmail.com</a>&gt; wr=
+ote:<br>
+&gt;&gt;<br>
+&gt;&gt; How is 2 pm on the 13th for people?<br>
+&gt;&gt;<br>
+&gt;&gt;<br>
+&gt;&gt;<br>
+&gt;&gt;&gt; On Feb 6, 2015, at 9:57 AM, Gene Sperling &lt;<a href=3D"mailt=
+o:gbsperling@gmail.com" target=3D"_blank">gbsperling@gmail.com</a>&gt; wrot=
+e:<br>
+&gt;&gt;&gt;<br>
+&gt;&gt;&gt; So sorry -- flying back from Australia on 12th. Any time on 13=
+th would work for me.<br>
+&gt;&gt;&gt;<br>
+&gt;&gt;&gt; Sent from my iPhone<br>
+&gt;&gt;&gt;<br>
+&gt;&gt;&gt;&gt; On Feb 6, 2015, at 6:37 AM, Jake Sullivan &lt;<a href=3D"m=
+ailto:jake.sullivan@gmail.com" target=3D"_blank">jake.sullivan@gmail.com</a=
+>&gt; wrote:<br>
+&gt;&gt;&gt;&gt;<br>
+&gt;&gt;&gt;&gt; Hi guys,<br>
+&gt;&gt;&gt;&gt;<br>
+&gt;&gt;&gt;&gt; Dan, Ann, Ethan, and I are hoping to assemble our favorite=
+ people on a conference call to talk about the policy agenda heading into 2=
+016.&nbsp; This would just be us, not HRC.&nbsp; We're hoping to get your a=
+ssessments of the state of play after the SOTU, the budget,
+ the CAP report, and some of the early Republican offerings -- and your adv=
+ice on how to move forward from here.<br>
+&gt;&gt;&gt;&gt;<br>
+&gt;&gt;&gt;&gt; Would 1 pm on the 12th work for people?&nbsp; We'd like to=
+ budget an hour.&nbsp; And after this call we'd like to find a time to get =
+the group together with HRC.<br>
+&gt;&gt;&gt;&gt;<br>
+&gt;&gt;&gt;&gt; Please let me know if that date/time work, and if not, if =
+there are other times on the 12th that would.<br>
+&gt;&gt;&gt;&gt;<br>
+&gt;&gt;&gt;&gt; Thanks and best,<br>
+&gt;&gt;&gt;&gt; Jake<br>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+</div>
+</div>
+</div>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+</div>
+</div>
+</div>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+--_000_BN1PR0301MB0740D9DC9A71698E73674D56B2230BN1PR0301MB0740_--
