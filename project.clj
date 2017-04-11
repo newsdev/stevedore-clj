@@ -7,7 +7,9 @@
        [org.clojure/clojure "1.8.0"]
        [clj-http "2.3.0"]
        [com.novemberain/pantomime "2.9.0"]
-       [clojurewerkz/elastisch "2.2.1"]
+       [clojurewerkz/elastisch "3.0.0-beta2"]
+       [cheshire "5.7.0"]
+
 
   ]
   :resource-paths     ["resources"]
