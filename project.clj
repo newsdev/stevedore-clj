@@ -9,6 +9,7 @@
        [com.novemberain/pantomime "2.9.0"]
        [clojurewerkz/elastisch "3.0.0-beta2"]
        [cheshire "5.7.0"]
+      [slingshot "0.12.2"]
 
 
   ]

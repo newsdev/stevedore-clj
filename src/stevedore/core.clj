@@ -7,16 +7,19 @@
           '[clojurewerkz.elastisch.rest.index :as esidx]
           '[clojurewerkz.elastisch.rest.document :as esdoc]
           '[clojure.pprint :as pprint]
+          '[clojure.string :as string]
           '[clj-http.client :as client]
           '[cheshire.core :as json]
+          '[slingshot.slingshot :as slingshot]
          )
+  (import org.elasticsearch.indices.IndexAlreadyExistsException)
 
 
 (defn -main
   "I don't do a whole lot ... yet."
   [& args] ; TODO; args is just a list
 
-  (def esindex "cljidx") ; TODO: get this from args
+  (def esindexname "cljidx") ; TODO: get this from args
 
   (let [conn (esrest/connect "http://127.0.0.1:9200")
         mapping-types {"doc" {:properties {:title   {:type "string" :store "yes" :analyzer "keyword"}
@@ -49,8 +52,17 @@
                   } 
         ]
     ; TODO: only create index if it's absent
-    ; (try+
-    ;   (esidx/create conn esindex {:mappings mapping-types :settings settings})
+    ; right now it just catches everythign.
+    (slingshot/try+
+      (esidx/create conn esindexname {:mappings mapping-types :settings settings})
+    (catch [:status 400] {:keys [ body]}
+      (if (not (string/includes? body "index_already_exists_exception"))
+        (slingshot/throw+)
+        ; (prn "index already exists; that's okay (doing nothing)")
+      )
+    )
+    )
+
     ; (catch [:status 403] {:keys [request-time headers body]}
     ;   )
     ; (log/warn "NOT Found 404" request-time headers body))
@@ -86,18 +98,30 @@
             ; :_updatedAt ; TODO
           }
     )
+    (def files (remove #(.isDirectory %) (file-seq (clojure.java.io/file (or (first args) "resources/emls/")))))
+    (defn esindex [document] (:_id (esdoc/create conn esindexname "doc" (arrange-for-indexing document))))
 
-
-    (def files (remove #(.isDirectory %) (file-seq (clojure.java.io/file (or (first args) "resources/emls/"))))
-      (pprint/pprint 
-        (map 
-          #(
-            (esdoc/create conn esindex "doc" (arrange-for-indexing %))
+    (def parse-futures-list (doall (
+        map #(
+            future (esindex (extract/parse %))
           )
-          (map extract/parse files )
-        )
-      ) 
-    ) ; end def files
+          files
+    )))
+
+    ; ; (prn parsed-documents)
+
+    ; (def indexing-futures-list (doall (
+    ;     map #(
+    ;         future (esindex %)
+    ;       )
+    ;       parse-futures-list
+    ; )))
+
+    (def indexed-documents (map #(prn (deref %)) parse-futures-list))
+
+    ; (prn indexed-documents)
+
+              
   ) ; end let
 
 ) ; end defn
