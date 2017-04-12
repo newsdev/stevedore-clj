@@ -20,6 +20,19 @@
   [& args] ; TODO; args is just a list
 
   (def esindexname "cljidx") ; TODO: get this from args
+  (def s3-bucket "int-data-dumps")
+  (def s3-path nil)
+  (def s3-basepath (str "https://" s3-bucket ".s3.amazonaws.com/" (or s3-path esindexname) "/"))
+
+  ; via https://gist.github.com/hozumi/1472865
+  (defn sha1-str [s]
+    (->> (-> "sha1"
+             java.security.MessageDigest/getInstance
+             (.digest (.getBytes s)))
+         (map #(.substring
+                (Integer/toString
+                 (+ (bit-and % 0xff) 0x100) 16) 1))
+         (apply str)))
 
   (let [conn (esrest/connect "http://127.0.0.1:9200")
         mapping-types {"doc" {:properties {:title   {:type "string" :store "yes" :analyzer "keyword"}
@@ -75,9 +88,9 @@
 
     (defn arrange-for-indexing [tika-parsed-doc] 
           {
-            ; :sha1
+            :sha1 (sha1-str (:download-url tika-parsed-doc) )
             :title (:subject tika-parsed-doc)
-            :source_url "" ; TODO
+            :source_url (:download-url tika-parsed-doc) ; TODO
             :file {
               :title (:subject tika-parsed-doc)
               :file (:text tika-parsed-doc)
@@ -98,12 +111,30 @@
             ; :_updatedAt ; TODO
           }
     )
-    (def files (remove #(.isDirectory %) (file-seq (clojure.java.io/file (or (first args) "resources/emls/")))))
-    (defn esindex [document] (:_id (esdoc/create conn esindexname "doc" (arrange-for-indexing document))))
+    (def input-files-path (or (first args) "resources/emls/"))
+    (def files (remove #(.isDirectory %) (file-seq (clojure.java.io/file input-files-path))))
+    (defn esindex [rawdoc] (
+      (def document (arrange-for-indexing rawdoc))
+      (esdoc/create conn esindexname "doc" document)  
+      (:title document)
+      ))
+
+    (def target-path (first (string/split input-files-path #"\*")))
+    (defn make-download-url [filename]
+      ; filename_basepath = filename.gsub(target_path.split("*").first, '')
+      ;   download_filename = @s3_basepath + ((filename_basepath[0] == '/' || @s3_basepath[-1] == '/') ? '' : '/') + filename_basepath
+      (def filename-basepath (string/replace-first filename target-path "" ))
+      (str s3-basepath (if (or (= (first filename-basepath) \/) (= (last s3-basepath) \/)) "" "/") filename-basepath)
+    )
+
+    ; this should eventually treat emails different from blobs, etc.
+    (defn parse-file [filename]
+      (assoc (extract/parse filename) :download-url (make-download-url filename))
+    )
 
     (def parse-futures-list (doall (
         map #(
-            future (esindex (extract/parse %))
+            future (esindex (parse-file %))
           )
           files
     )))
@@ -117,10 +148,9 @@
     ;       parse-futures-list
     ; )))
 
-    (def indexed-documents (map #(prn (deref %)) parse-futures-list))
-
-    ; (prn indexed-documents)
-
+    (def indexed-documents (doall (map #(prn (deref %)) parse-futures-list)))
+    ; TODO: why does it not end?!
+    ; also why does it print a seemingly-random set of 10 subjects here? (I assume these are related.)
               
   ) ; end let
 
