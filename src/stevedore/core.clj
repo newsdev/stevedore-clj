@@ -58,49 +58,50 @@
     )
     )
 
+    (defn arrange-for-indexing [tika-parsed-doc] 
+          {
+            ; :sha1 (sha1-str (:download-url tika-parsed-doc) )
+            :title (:subject tika-parsed-doc)
+            ; :source_url (:download-url tika-parsed-doc)
+            :file {
+              :title (:subject tika-parsed-doc)
+              :file (:text tika-parsed-doc)
+            }
+            :analyzed {
+              :body (:text tika-parsed-doc)
+              :metadata {
+                "Content-Type" (:creation-date tika-parsed-doc)
+                "Creation-Date"(:content-type tika-parsed-doc)
+                "Message-From" (:message-from tika-parsed-doc)
+                "Message-To"   (:message-to tika-parsed-doc)
+                "Message-Cc"   (:message-cc tika-parsed-doc)
+                "subject"      (:subject tika-parsed-doc)
+                ; "attachments"  nil ; TODO
+                "dkim_verified" false
+              }
+            }
+            ; :_updatedAt ; TODO
+          }
+    )
+
+    ; via https://gist.github.com/hozumi/1472865
+    (defn sha1-str [s]
+      (->> (-> "sha1"
+               java.security.MessageDigest/getInstance
+               (.digest (.getBytes s)))
+           (map #(.substring
+                  (Integer/toString
+                   (+ (bit-and % 0xff) 0x100) 16) 1))
+           (apply str)))
+
     (defn -main
       "I don't do a whole lot ... yet."
       [& args] ; TODO; args is just a list
 
 
-
-        ; via https://gist.github.com/hozumi/1472865
-        (defn sha1-str [s]
-          (->> (-> "sha1"
-                   java.security.MessageDigest/getInstance
-                   (.digest (.getBytes s)))
-               (map #(.substring
-                      (Integer/toString
-                       (+ (bit-and % 0xff) 0x100) 16) 1))
-               (apply str)))
-
-        (defn arrange-for-indexing [tika-parsed-doc] 
-              {
-                ; :sha1 (sha1-str (:download-url tika-parsed-doc) )
-                :title (:subject tika-parsed-doc)
-                ; :source_url (:download-url tika-parsed-doc)
-                :file {
-                  :title (:subject tika-parsed-doc)
-                  :file (:text tika-parsed-doc)
-                }
-                :analyzed {
-                  :body (:text tika-parsed-doc)
-                  :metadata {
-                    "Content-Type" (:creation-date tika-parsed-doc)
-                    "Creation-Date"(:content-type tika-parsed-doc)
-                    "Message-From" (:message-from tika-parsed-doc)
-                    "Message-To"   (:message-to tika-parsed-doc)
-                    "Message-Cc"   (:message-cc tika-parsed-doc)
-                    "subject"      (:subject tika-parsed-doc)
-                    ; "attachments"  nil ; TODO
-                    "dkim_verified" false
-                  }
-                }
-                ; :_updatedAt ; TODO
-              }
-        )
         (def input-files-path (or (first args) "resources/emls/"))
         (def files (remove #(.isDirectory %) (file-seq (clojure.java.io/file input-files-path))))
+        
         (defn elasticsearchindex [rawdoc]
           (let [document (arrange-for-indexing rawdoc)]
             (def asdf (time (esdoc/create conn esindexname "doc" document) ))
