@@ -13,11 +13,11 @@
           '[slingshot.slingshot :as slingshot]
          )
   (import org.elasticsearch.indices.IndexAlreadyExistsException)
-  (let [esindexname "cljidx" ; TODO: get this from args
-        s3-bucket "int-data-dumps"
-        s3-path nil
-        s3-basepath (str "https://" s3-bucket ".s3.amazonaws.com/" (or s3-path esindexname "/"))
-        conn (esrest/connect "http://127.0.0.1:9200")
+  (let [_default-es-index-name "cljidx" ; TODO: get this from args
+        _default-s3-bucket "int-data-dumps"
+        _default-s3-path nil
+        _default-es-host "http://127.0.0.1:9200"
+        _default-input-files-path "resources/emls/"
           
         mapping-types {"doc" {:properties {:title   {:type "string" :store "yes" :analyzer "keyword"}
                                             :source_url {:type "string" :store "yes" :index "not_analyzed"}
@@ -48,21 +48,34 @@
                     }
                   } 
         ]
-    (slingshot/try+
-      (esidx/create conn esindexname {:mappings mapping-types :settings settings})
-    (catch [:status 400] {:keys [ body]}
-      (if (not (string/includes? body "index_already_exists_exception"))
-        (slingshot/throw+)
-        ; (prn "index already exists; that's okay (doing nothing)")
+    
+    (defn ensure-elasticsearch-index-created! [conn es-index]
+      (slingshot/try+
+        (esidx/create conn es-index {:mappings mapping-types :settings settings})
+      (catch [:status 400] {:keys [ body]}
+        (if (not (string/includes? body "index_already_exists_exception"))
+          (slingshot/throw+)
+          (prn (str "index " es-index " already exists; that's okay (doing nothing)"))
+        )
+      )
       )
     )
-    )
+
+    ; via https://gist.github.com/hozumi/1472865
+    (defn sha1-str [s]
+      (->> (-> "sha1"
+               java.security.MessageDigest/getInstance
+               (.digest (.getBytes s)))
+           (map #(.substring
+                  (Integer/toString
+                   (+ (bit-and % 0xff) 0x100) 16) 1))
+           (apply str)))
 
     (defn arrange-for-indexing [tika-parsed-doc] 
           {
-            ; :sha1 (sha1-str (:download-url tika-parsed-doc) )
+            :sha1 (sha1-str (:download-url tika-parsed-doc) )
             :title (:subject tika-parsed-doc)
-            ; :source_url (:download-url tika-parsed-doc)
+            :source_url (:download-url tika-parsed-doc)
             :file {
               :title (:subject tika-parsed-doc)
               :file (:text tika-parsed-doc)
@@ -84,65 +97,63 @@
           }
     )
 
-    ; via https://gist.github.com/hozumi/1472865
-    (defn sha1-str [s]
-      (->> (-> "sha1"
-               java.security.MessageDigest/getInstance
-               (.digest (.getBytes s)))
-           (map #(.substring
-                  (Integer/toString
-                   (+ (bit-and % 0xff) 0x100) 16) 1))
-           (apply str)))
+
+    (defn elasticsearch-index-function-maker [conn es-index] (fn [document] esdoc/create conn es-index "doc" document))
+
+    (defn make-download-url-function-maker [s3-basepath target-path ] 
+      (fn [filename]           
+        (def filename-basepath (string/replace-first filename target-path "" ))
+        (str s3-basepath (if (or (= (first filename-basepath) \/) (= (last s3-basepath) \/)) "" "/") filename-basepath)
+      )
+    )
+
+    ; this should eventually treat emails different from blobs, etc.    
+    (defn parse-file-function-maker [make-download-url]
+      (fn [filename] (assoc (extract/parse filename) :download-url (make-download-url filename)))
+    )
+
 
     (defn -main
       "I don't do a whole lot ... yet."
       [& args] ; TODO; args is just a list
 
+      (let [
+          es-index (or false _default-es-index-name)
+          s3-bucket (or false _default-s3-bucket)
+          s3-path (or false _default-s3-path)
+          es-host (or false _default-es-host)
+          input-files-path (or (first args) _default-input-files-path)
 
-        (def input-files-path (or (first args) "resources/emls/"))
+          s3-basepath (str "https://" s3-bucket ".s3.amazonaws.com/" (or s3-path es-index "/"))
+          target-path (first (string/split input-files-path #"\*"))
+          make-download-url (make-download-url-function-maker s3-basepath target-path)
+          
+          conn (esrest/connect "http://127.0.0.1:9200")
+        ]
+
+        (ensure-elasticsearch-index-created! conn es-index)
+
         (def files (remove #(.isDirectory %) (file-seq (clojure.java.io/file input-files-path))))
-        
-        (defn elasticsearchindex [rawdoc]
-          (let [document (arrange-for-indexing rawdoc)]
-            (def asdf (time (esdoc/create conn esindexname "doc" document) ))
-            
-            (prn (:_id asdf))
-            (:title document)
+        (defn elasticsearchindex! [rawdoc]
+          (let [document (arrange-for-indexing rawdoc)
+                actually-index! ((elasticsearch-index-function-maker conn es-index) document)
+                ]
+            (def indexed-document-metadata {:title document :id (:_id (actually-index! document) )})
+            ; (prn indexed-document-metadata)
           )
         )
 
-        (def target-path (first (string/split input-files-path #"\*")))
-        (defn make-download-url [filename]
-          (def filename-basepath (string/replace-first filename target-path "" ))
-          (str s3-basepath (if (or (= (first filename-basepath) \/) (= (last s3-basepath) \/)) "" "/") filename-basepath)
-        )
-
-        ; this should eventually treat emails different from blobs, etc.
-        (defn parse-file [filename]
-          (assoc (extract/parse filename) :download-url (make-download-url filename))
-        )
-
+        (defn parse-file [filename] ((parse-file-function-maker make-download-url) filename) )
         (let [parse-futures-list (doseq [filename files] 
-          (future (elasticsearchindex (parse-file filename)))
+          (def parsed-file (parse-file filename))
+          ; (prn parsed-file)
+          (future (elasticsearchindex! parsed-file))
           )]
             (map deref parse-futures-list )
             (shutdown-agents)
 
         )
-
-        ; (defn upload-images [my-files]
-        ;     (doall
-        ;       (map-indexed
-        ;        (fn [filename i]
-        ;          (future (elasticsearchindex (parse-file filename))))
-        ;        my-files)))
-
-        ; (def f (upload-images files))
-        ;   (map deref f)
-        
-
-
-            
+      ) ; end function-wide let.
 
     ) ; end defn main
   ) ; end let
