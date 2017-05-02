@@ -1,5 +1,6 @@
 (ns stevedore.core-test
   (:require [clojure.test :refer :all]
+  			[clojure.java.io :as io]
             [stevedore.core :refer :all]))
 
 ; TODO: this should be a real fixture
@@ -42,7 +43,6 @@
 	  (testing "arranged-for-indexing doc will always have a file.file"
 	    (is (not (nil? (:file (:file (arrange-for-indexing example-tika-doc)) ))  ))) )
 
-
 	(deftest has-file-title-test
 	  (testing "arranged-for-indexing doc will always have a file.title"
 	    (is (not (nil? (:title (:file (arrange-for-indexing example-tika-doc)) ))  ))) )
@@ -50,4 +50,12 @@
 	(deftest has-analyzed-body-test
 	  (testing "arranged-for-indexing doc will always have an analyzed.body"
 	    (is (not (nil? (:body (:analyzed (arrange-for-indexing example-tika-doc)) ))  ))) )
+
+	(deftest write-to-temp-test 
+	  (testing "writing to temp works and returns a string"
+	  	(let [
+	  			outputfnfragment "test1/test2/test3.txt"
+	  			outputfn (write-to-temp "whatevereverever" outputfnfragment )]
+	  	(is (string? output ) )
+	  	(is (.exists (io/as-file output) ) )  ) ) )
 )

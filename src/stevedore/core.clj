@@ -105,9 +105,10 @@
     (defn elasticsearch-index-factory [conn es-index] (fn [document] (esdoc/put conn es-index "doc" (:sha1 document) document)))
 
     (defn make-download-url-factory [s3-basepath target-path ] 
-      (fn [filename]           
-        (def filename-basepath (string/replace-first filename target-path "" ))
-        (str s3-basepath (if (or (= (first filename-basepath) \/) (= (last s3-basepath) \/)) "" "/") filename-basepath)))
+      (fn [filename]
+        (let [filename-basepath (string/replace-first filename target-path "" )]
+          (doto (str s3-basepath (if (or (= (first filename-basepath) \/) (= (last s3-basepath) \/)) "" "/") filename-basepath) (println) ))))
+
 
     ; this should eventually treat emails different from blobs, etc.    
     (defn parse-file-factory [make-download-url]
@@ -115,16 +116,17 @@
         [{ download-url-fragment :download-url-fragment
            filepath :path }] 
         (assoc 
-          (try (extract/parse filepath) (catch org.apache.tika.exception.TikaException e (println "there was an error parsing " filepath)            nil) )
+          (try (extract/parse filepath) (catch org.apache.tika.exception.TikaException e (println "there was an error parsing " filepath) nil) )
           :download-url (make-download-url download-url-fragment))))
 
-    (defn write-to-temp [file relative-path]
+    (defn write-to-temp [stream relative-path]
       "writes a stream to /tmp"
       (let 
-        [path (io/file tmpdir relative-path)]
-        (io/make-parents path)
-        (io/copy file path)
-        path ))
+        [file (io/file tmpdir relative-path)]
+        (io/make-parents file)
+        (io/copy stream file)
+        (.deleteOnExit file) ; some JVM-specific thing
+        (str file) ))
     (defn write-s3-to-temp 
       "downloads and writes to /tmp a file from S3 by its object-summary, preserving path under bucket"
       [object-summary]
@@ -143,7 +145,7 @@
         ]
         (map 
           (fn [object-summary] (hash-map :download-url-fragment (:key object-summary)
-             :path (str (write-s3-to-temp object-summary)))) (remove #(= (:size %) 0) objects ) )))
+             :path (write-s3-to-temp object-summary))) (remove #(= (:size %) 0) objects ) )))
 
     (defn local-files-factory [input-files-path]
       "returns a function taking a local pathh and returning a map with keys for the absolute path and download url fragment for each contained file."      
@@ -186,7 +188,7 @@
                 document (arrange-for-indexing rawdoc)
                 indexed-document-metadata {:title (:title (:file document)) :id (:_id (actually-index! document) )}
                ]
-            ; (prn indexed-document-metadata)
+            (prn indexed-document-metadata)
           )
         )
 
