@@ -2,6 +2,7 @@
   (:require [clojure.test :refer :all]
             [stevedore.core :refer :all]))
 
+; TODO: this should be a real fixture
 (let [example-tika-doc {
 			:meta/author '("Fake Person <fperson@example.com>"), 
 			:meta/creation-date '("2016-03-07T04:23:15Z"), 
@@ -37,17 +38,16 @@
 	  (testing "arranged-for-indexing doc will always have a source-url"
 	    (is (not (nil? (:source_url (arrange-for-indexing example-tika-doc)) )  ))) )
 
-	; (deftest a-test
-	; (deftest a-test
-	;   (testing "arranged-for-indexing doc will always have a file.file"
-	;     (is (= (sha1-str "test.pdf") "636120a629e1539d87fa47afee8847a253690437"))))
+	(deftest has-source-url-test
+	  (testing "arranged-for-indexing doc will always have a file.file"
+	    (is (not (nil? (:file (:file (arrange-for-indexing example-tika-doc)) ))  ))) )
 
 
-	; (deftest a-test
-	;   (testing "arranged-for-indexing doc will always have a file.title"
-	;     (is (= (sha1-str "test.pdf") "636120a629e1539d87fa47afee8847a253690437"))))
+	(deftest has-file-title-test
+	  (testing "arranged-for-indexing doc will always have a file.title"
+	    (is (not (nil? (:title (:file (arrange-for-indexing example-tika-doc)) ))  ))) )
 
-	; (deftest a-test
-	;   (testing "arranged-for-indexing doc will always have an analyzed.body"
-	;     (is (= (sha1-str "test.pdf") "636120a629e1539d87fa47afee8847a253690437"))))
+	(deftest has-analyzed-body-test
+	  (testing "arranged-for-indexing doc will always have an analyzed.body"
+	    (is (not (nil? (:body (:analyzed (arrange-for-indexing example-tika-doc)) ))  ))) )
 )
