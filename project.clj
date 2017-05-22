@@ -14,6 +14,7 @@
       [slingshot "0.12.2"]
       [amazonica "0.3.95"]
       [me.raynes/fs "1.4.6"]
+      [org.clojure/tools.cli "0.3.5"]
 
 
   ]

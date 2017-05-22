@@ -10,6 +10,8 @@
           '[slingshot.slingshot :as slingshot]
           '[amazonica.aws.s3 :as s3]
           '[me.raynes.fs :as fs]
+          '[clojure.tools.cli :refer [parse-opts]]
+
          )
   ;   (:require [clojure.zip :refer [lefts rights]])) ; consider this to save memory
   (import org.elasticsearch.indices.IndexAlreadyExistsException)
@@ -156,21 +158,105 @@
       [input-files-path] 
       (if (or (string/starts-with? input-files-path "s3://") (string/starts-with? input-files-path "S3://")) (s3-files-factory input-files-path) (local-files-factory input-files-path) ))
 
+
+    (def cli-options
+      ;; An option with a required argument
+      [
+      ["-h" "--host SERVER:PORT" "the location of the ElasticSearch server"
+        :default "http://localhost:9200"
+      ]
+
+      ["-i" "--index NAME" "a name to use for the ES index"
+        :default nil
+        :validate [#(re-matches #"^[a-z][a-z0-9\-\_]+$" %) "Must begin with a lowercase letter and contain only lowercase letters, numbers, dashes and underscores."]]
+
+      ["-s" "--s3path NAME" "a name to use for the ES index"
+        :default nil]
+      
+      ["-b" "--s3bucket NAME" "a name to use for the ES index"
+        :default nil]
+
+      [nil "--slice-size NUM" "Process documents in batches of SLICE. Default is 100. Lower this if you get timeouts. Raise it to go faster."
+        :default 100
+        :parse-fn #(Integer/parseInt %)
+        :validate [#(< 0 % 0x10000) "Must be a number between 0 and 65536"]]
+
+
+        ; CSV uploading not yet impelmented in Clojure, but once it is, we'll want these options.
+        ; opts.on("--title-column=COLNAME",
+        ;         "If target file is a CSV, which column contains the title of the row. Integer index or string column name."
+        ;   ) do |title_column|
+        ;   options.title_column = title_column
+        ; end
+        ; opts.on("--text-column=COLNAME",
+        ;         "If target file is a CSV, which column contains the main, searchable of the row. Integer index or string column name."
+        ;   ) do |text_column|
+        ;   options.text_column = text_column
+        ; end        
+       ["-o" "--no-ocr" "don't attempt to OCR any PDFs, even if they contain no text"
+          :default false
+       ]
+
+       ;; A non-idempotent option
+       ["-v" "--verbose" "Verbose"]
+
+       ;; A boolean option defaulting to nil
+       ["-?" "--help" "Show this help message"]
+      ] )
+
+    ; this all is copied from tools.cli
+    (defn usage [options-summary]
+      (->> ["This is my program. There are many like it, but this one is mine."
+            ""
+            "Usage: program-name [options] input/file/path"
+            ""
+            "Options:"
+            options-summary
+            ""
+            "Please refer to the manual page for more information."]
+           (string/join \newline)))
+    (defn error-msg [errors]
+      (str "The following errors occurred while parsing your command:\n\n"
+           (string/join \newline errors)))
+    (defn validate-args
+      "Validate command line arguments. Either return a map indicating the program
+      should exit (with a error message, and optional ok status), or a map
+      indicating the action the program should take and the options provided."
+      [args]
+      (let [{:keys [options arguments errors summary]} (parse-opts args cli-options)]
+        (cond
+          (:help options) ; help => exit OK with usage summary
+            {:exit-message (usage summary) :ok? true}
+          errors ; errors => exit with description of errors
+            {:exit-message (error-msg errors)}
+          (= 1 (count arguments))
+          ;; custom validation on arguments
+            {:input-files-path (first arguments) :options options}
+          :else ; failed custom validation => exit with usage summary
+          {:exit-message (usage summary)})))
+
+    (defn exit [status msg]
+      (println msg)
+      (System/exit status))
+
+
     (defn -main
       "I don't do a whole lot ... yet."
-      [& args] ; TODO; args is just a list
-               ; https://github.com/clojure/tools.cli
-
+      [& args] 
       (let [
-          input-files-path (or (first args) _default-input-files-path)
+          {:keys [input-files-path options exit-message ok?]} (validate-args args) ; https://github.com/clojure/tools.cli
+
           is-s3 (or (string/starts-with? input-files-path "s3://") (string/starts-with? input-files-path "S3://"))
 
-          es-index (or false _default-es-index-name)
-          es-host (or false _default-es-host)
+          es-index (or (:index options) _default-es-index-name)
+          es-host (or (:host options) _default-es-host)
 
-          s3-bucket (if is-s3 (nth (string/split input-files-path #"/+") 1) (or false _default-s3-bucket))
-          s3-path (if is-s3 nil (or false _default-s3-path))
+          s3-bucket (if is-s3 (nth (string/split input-files-path #"/+") 1) (or (:s3bucket options) _default-s3-bucket))
+          s3-path (if is-s3 nil (or (:s3path options) _default-s3-path))
           s3-basepath (str "https://" s3-bucket ".s3.amazonaws.com/" (if is-s3 nil (or s3-path es-index "/")))
+          slice-size (or (:slice-size options ) 100)
+          no-ocr (or (:no-ocr options ) 100) ; TODO: currently a no-op
+          verbose (or (:verbose options ) 100) ; TODO: currently a no-op
 
           target-path (first (string/split input-files-path #"\*"))
           make-download-url (make-download-url-factory s3-basepath target-path)
@@ -179,30 +265,36 @@
           files (files-factory input-files-path) 
         ]
 
-        (ensure-elasticsearch-index-created! conn es-index)
+        (println options)
 
+        (if exit-message
+          (exit (if ok? 0 1) exit-message)
 
-        (defn elasticsearchindex! [rawdoc]
-          (defn actually-index! [document] ((elasticsearch-index-factory conn es-index) document))
-          (let [
-                document (arrange-for-indexing rawdoc)
-                indexed-document-metadata {:title (:title (:file document)) :id (:_id (actually-index! document) )}
-               ]
-            (prn indexed-document-metadata)
+          (do
+            (ensure-elasticsearch-index-created! conn es-index)
+
+            (defn elasticsearchindex! [rawdoc]
+              (defn actually-index! [document] ((elasticsearch-index-factory conn es-index) document))
+              (let [
+                    document (arrange-for-indexing rawdoc)
+                    indexed-document-metadata {:title (:title (:file document)) :id (:_id (actually-index! document) )}
+                   ]
+                (prn indexed-document-metadata)
+              )
+            )
+            (defn parse-file 
+              "takes a hash of :path and :download-url-fragment"
+              [ fileinfo] 
+              ((parse-file-factory make-download-url) fileinfo)  )
+
+            (let [parse-futures-list (doseq [fileinfo files] 
+              (future (elasticsearchindex! (parse-file fileinfo)))
+              )]
+                (map deref parse-futures-list )
+                (shutdown-agents)
+            )
           )
-        )
-
-        (defn parse-file 
-          "takes a hash of :path and :download-url-fragment"
-          [ fileinfo] 
-          ((parse-file-factory make-download-url) fileinfo)  )
-        (let [parse-futures-list (doseq [fileinfo files] 
-          (future (elasticsearchindex! (parse-file fileinfo)))
-          )]
-            (map deref parse-futures-list )
-            (shutdown-agents)
-
-        )
+        ); ends `if exit-message `
       ) ; end main-wide let.
 
     ) ; end defn main

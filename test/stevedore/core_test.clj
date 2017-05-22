@@ -56,6 +56,6 @@
 	  	(let [
 	  			outputfnfragment "test1/test2/test3.txt"
 	  			outputfn (write-to-temp "whatevereverever" outputfnfragment )]
-	  	(is (string? output ) )
-	  	(is (.exists (io/as-file output) ) )  ) ) )
+	  	(is (string? outputfn ) )
+	  	(is (.exists (io/as-file outputfn) ) )  ) ) )
 )
