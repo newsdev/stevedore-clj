@@ -201,14 +201,14 @@
        ["-v" "--verbose" "Verbose"]
 
        ;; A boolean option defaulting to nil
-       ["-?" "--help" "Show this help message"]
+       ["-H" "--help" "Show this help message"]
       ] )
 
     ; this all is copied from tools.cli
     (defn usage [options-summary]
-      (->> ["This is my program. There are many like it, but this one is mine."
+      (->> ["Upload documents to Stevedore, so they can be searchable: github.com/newsdev/stevedore"
             ""
-            "Usage: program-name [options] input/file/path"
+            "Usage: stevedore [options] input/file/path"
             ""
             "Options:"
             options-summary
@@ -245,24 +245,6 @@
       [& args] 
       (let [
           {:keys [input-files-path options exit-message ok?]} (validate-args args) ; https://github.com/clojure/tools.cli
-
-          is-s3 (or (string/starts-with? input-files-path "s3://") (string/starts-with? input-files-path "S3://"))
-
-          es-index (or (:index options) _default-es-index-name)
-          es-host (or (:host options) _default-es-host)
-
-          s3-bucket (if is-s3 (nth (string/split input-files-path #"/+") 1) (or (:s3bucket options) _default-s3-bucket))
-          s3-path (if is-s3 nil (or (:s3path options) _default-s3-path))
-          s3-basepath (str "https://" s3-bucket ".s3.amazonaws.com/" (if is-s3 nil (or s3-path es-index "/")))
-          slice-size (or (:slice-size options ) 100)
-          no-ocr (or (:no-ocr options ) 100) ; TODO: currently a no-op
-          verbose (or (:verbose options ) 100) ; TODO: currently a no-op
-
-          target-path (first (string/split input-files-path #"\*"))
-          make-download-url (make-download-url-factory s3-basepath target-path)
-          
-          conn (esrest/connect es-host)
-          files (files-factory input-files-path) 
         ]
 
         (println options)
@@ -270,30 +252,50 @@
         (if exit-message
           (exit (if ok? 0 1) exit-message)
 
-          (do
-            (ensure-elasticsearch-index-created! conn es-index)
+          (let [          
+            is-s3 (or (string/starts-with? input-files-path "s3://") (string/starts-with? input-files-path "S3://"))
 
-            (defn elasticsearchindex! [rawdoc]
-              (defn actually-index! [document] ((elasticsearch-index-factory conn es-index) document))
-              (let [
-                    document (arrange-for-indexing rawdoc)
-                    indexed-document-metadata {:title (:title (:file document)) :id (:_id (actually-index! document) )}
-                   ]
-                (prn indexed-document-metadata)
+            es-index (or (:index options) _default-es-index-name)
+            es-host (or (:host options) _default-es-host)
+
+            s3-bucket (if is-s3 (nth (string/split input-files-path #"/+") 1) (or (:s3bucket options) _default-s3-bucket))
+            s3-path (if is-s3 nil (or (:s3path options) _default-s3-path))
+            s3-basepath (str "https://" s3-bucket ".s3.amazonaws.com/" (if is-s3 nil (or s3-path es-index "/")))
+            slice-size (or (:slice-size options ) 100)
+            no-ocr (or (:no-ocr options ) 100) ; TODO: currently a no-op
+            verbose (or (:verbose options ) 100) ; TODO: currently a no-op
+
+            target-path (first (string/split input-files-path #"\*"))
+            make-download-url (make-download-url-factory s3-basepath target-path)
+            
+            conn (esrest/connect es-host)
+            files (files-factory input-files-path) 
+          ] (do
+
+              (ensure-elasticsearch-index-created! conn es-index)
+
+              (defn elasticsearchindex! [rawdoc]
+                (defn actually-index! [document] ((elasticsearch-index-factory conn es-index) document))
+                (let [
+                      document (arrange-for-indexing rawdoc)
+                      indexed-document-metadata {:title (:title (:file document)) :id (:_id (actually-index! document) )}
+                     ]
+                  (prn indexed-document-metadata)
+                )
               )
-            )
-            (defn parse-file 
-              "takes a hash of :path and :download-url-fragment"
-              [ fileinfo] 
-              ((parse-file-factory make-download-url) fileinfo)  )
+              (defn parse-file 
+                "takes a hash of :path and :download-url-fragment"
+                [ fileinfo] 
+                ((parse-file-factory make-download-url) fileinfo)  )
 
-            (let [parse-futures-list (doseq [fileinfo files] 
-              (future (elasticsearchindex! (parse-file fileinfo)))
-              )]
-                (map deref parse-futures-list )
-                (shutdown-agents)
-            )
-          )
+              (let [parse-futures-list (doseq [fileinfo files] 
+                (future (elasticsearchindex! (parse-file fileinfo)))
+                )]
+                  (map deref parse-futures-list )
+                  (shutdown-agents)
+              )
+            ) ; ends do?
+          ) ; ends inner let
         ); ends `if exit-message `
       ) ; end main-wide let.
 
