@@ -96,6 +96,7 @@
                 "Message-To"   (:message-to tika-parsed-doc)
                 "Message-Cc"   (:message-cc tika-parsed-doc)
                 "subject"      (:subject tika-parsed-doc)
+                "title"      (:subject tika-parsed-doc)                
                 ; "attachments"  nil ; TODO
                 "dkim_verified" false
               }
@@ -241,7 +242,7 @@
 
 
     (defn -main
-      "I don't do a whole lot ... yet."
+      "Uploads files to an ElasticSearch server."
       [& args] 
       (let [
           {:keys [input-files-path options exit-message ok?]} (validate-args args) ; https://github.com/clojure/tools.cli
